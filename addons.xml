@@ -1,240 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="context.copytostorage" name="Copy File To Storage" version="1.0.0" provider-name="Abel Tesfaye">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-  <extension point="kodi.context.item">
-    <menu id="kodi.core.main">
-      <item library="addon.py">
-        <label>32000</label>
-        <visible>String.IsEqual(ListItem.dbtype,movie) |String.IsEqual(ListItem.dbtype,video) |  String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,musicvideo) | String.IsEqual(ListItem.dbtype,music) | String.IsEqual(ListItem.dbtype,song) | String.IsEqual(ListItem.dbtype,album)| String.IsEqual(ListItem.dbtype,artist) </visible>
-      </item>
-    </menu>
-  </extension>
-  <extension point="kodi.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Copy any file using the context menu.</summary>
-    <description lang="en_GB">Adds a context menu entry for to enable you to copy movies, songs, etc.. into your devices</description>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3,  29 June 2007</license>
-    <forum></forum>
-    <source>https://github.com/abeltesfaye/context.copytostorage</source>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-        <screenshot>resources/screenshot-01.png</screenshot>
-        <screenshot>resources/screenshot-02.png</screenshot>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="plugin.program.addon.aktivator"
-       name="[COLOR blue]Kodi Addon Aktivator[/COLOR]"
-	   version="1.0.0"
-	   provider-name="Loki1979 | HSK-DE">
-    <requires>
-		<import addon="xbmc.python" version="2.7.11"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="aktivator.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>[COLOR blue]Kodi Addon Aktivator[/COLOR]</summary>
-    <description>Die Kodi Version muss mindestens 17 sein !</description>
-    </extension>
-</addon>
-
-<addon id="plugin.program.addons.updater"
-		name="[COLOR blue]Addons Updater[/COLOR]"
-		version="1.0.2.3"
-		provider-name="[COLOR blue]loki1979 | renexyz[/COLOR]">
-	<requires>
-		<import addon="xbmc.python" version="2.7.13" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="resources/pys/updater.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-	<summary></summary>
-	<description></description>
-	<disclaimer></disclaimer>
-	<language></language>
-	<platform>all</platform>
-	<license></license>
-	<forum></forum>
-	<website></website>
-	<email></email>
-	<source></source>
-	<news></news>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-		<banner></banner>
-		<clearlogo></clearlogo>
-		<screenshot></screenshot>
-	</assets>
-	</extension>
-</addon>
-
-<addon
-    id="plugin.program.addon_correction"
-    name="[COLOR lime]Kodi Addon Name Korrektur ( [COLOR gold]By Loki1979[/COLOR] )[/COLOR]"
-	version="1.0.1"
-    provider-name="[COLOR gold]Andre Albus * Loki1979[/COLOR]">
-    <requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="correction.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary>[COLOR lime]Kodi Addon Name Korrektur[/COLOR]</summary>
-		<description>Zippt alle Kodi Addons in und extern !
-
-Nur ungezippte Addons !
-Passt den Addon Ordner Namen an die Addon ID an
-falls dieser nicht mit der Addon ID gleich ist !
-
-Hardware - Software - Kodi - DE
-https://www.facebook.com/groups/hskde/</description>
-		<license></license>
-		<language></language>
-		<source></source>
-		<email></email>
-	</extension>
-</addon>
-
-<addon id="plugin.program.advanced.emulator.launcher" name="Advanced Emulator Launcher"
-       version="0.9.7" provider-name="Wintermute0110">
-  <requires>
-    <!-- See https://github.com/xbmc/xbmc/blob/master/addons/xbmc.python/addon.xml
-         2.25.0  Krypton 17.x
-         x.yy.z  Leia 18.x
-         x.yy.z  M**** 19.x
-    -->
-    <import addon="xbmc.python" version="2.25.0" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Start any emulators/apps from Kodi.</summary>
-    <description lang="en">Multi-emulator front-end and general application launcher for Kodi. Includes offline scrapers for MAME and No-Intro ROM sets and also supports scrapping ROM metadata and artwork online. ROM auditing for No-Intro ROMs using No-Intro or Redump XML DAT files. Launching of games and standalone applications is also available.</description>
-    <platform>all</platform>
-    <license>GNU General Public License version 2</license>
-    <email>wintermute0110@gmail.com</email>
-    <forum>http://forum.kodi.tv/showthread.php?tid=287826</forum>
-    <website>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher/wiki</website>
-    <source>https://github.com/Wintermute0110/plugin.program.advanced.emulator.launcher</source>
-    <assets>
-      <icon>media/icon.png</icon>
-      <fanart>media/fanart.jpg</fanart>
-      <screenshot>media/Estuary_ROM_Launcher.jpg</screenshot>
-      <screenshot>media/Estuary_ROM_Console.jpg</screenshot>
-      <screenshot>media/Estuary_ROM_MAME.jpg</screenshot>
-    </assets>
-    <news>See changelog.txt for information about the latest release.</news>
-  </extension>
-</addon>
-
-<addon id="plugin.program.advanced.launcher" name="Advanced Launcher" version="2.6.1" provider-name="Angelscry">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="2.0.9"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <disclaimer>For Kodi Helix/Gotham/Frodo/Eden/Dharma</disclaimer>
-        <summary lang="de">Beliebige Anwendungen aus Kodi starten.</summary>
-        <summary lang="en">Start any applications from Kodi.</summary>
-        <summary lang="fr">Lancer n'importer quelle application depuis Kodi.</summary>
-        <summary lang="fi">Käynnistää sovelluksia Kodi:stä</summary>
-        <description lang="de">Advanced Launcher erlaubt das Starten beliebiger Linux, Windows und OS X Anwendungen (mit oder ohne Kommandozeile) direkt aus der Kodi Oberfläche. Advanced Launcher erlaubt weiterhin das Editieren, Herunterladen und Verwalten der Metadaten (Informationen und Bilder) für diese Anwendungen aus dem Internet.</description>
-        <description lang="en">Advanced Launcher allows you to start any Linux, Windows and OS X applications (with command line support or not) directly from the Kodi GUI. Advanced Launcher also give you the possibility to edit, download (from Internet resources) and manage all the meta-data (informations and images) related to these applications.</description>
-	<description lang="ru">Advanced Launcher позволяет запускать любые приложения Linux, Windows и OS X (с поддержкой командной строки или нет) непосредственно из Коди GUI. Advanced Launcher также даст вам возможность редактировать, загружать (из интернет-ресурсов) и управлять всеми мета-данными (информация и изображения), связанными с этими приложениями.</description>
-        <description lang="fr">Advanced Launcher permet de lancer toutes les applications Linux, Windows and OS X (avec support des lignes de commandes ou non) directement depuis l'interface de Kodi. Advanced Launcher offre également la possibilité de modifier, télécharger (depuis les ressoures web) et de gérer toues les meta-donées (informations et images) relatives à ces applications.</description>
-        <description lang="fi">Advanced Launcherilla voit käynnistää Kodi:n käyttöliittymästä mitä tahansa sovelluksia. Käynnistettävistä sovelluksista voi hakea tietoja ja kuvia Internet-tietokannoista.</description>
-    </extension>
-</addon>
-
-<addon id="plugin.program.advanced.launcher" name="Advanced Launcher" version="2.5.8" provider-name="Angelscry">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.simplejson" version="2.0.9"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <disclaimer>For Kodi Helix/Gotham/Frodo/Eden/Dharma</disclaimer>
-        <summary lang="de">Beliebige Anwendungen aus Kodi starten.</summary>
-        <summary lang="en">Start any applications from Kodi.</summary>
-        <summary lang="fr">Lancer n'importer quelle application depuis Kodi.</summary>
-        <summary lang="fi">Käynnistää sovelluksia Kodi:stä</summary>
-        <description lang="de">Advanced Launcher erlaubt das Starten beliebiger Linux, Windows und OS X Anwendungen (mit oder ohne Kommandozeile) direkt aus der Kodi Oberfläche. Advanced Launcher erlaubt weiterhin das Editieren, Herunterladen und Verwalten der Metadaten (Informationen und Bilder) für diese Anwendungen aus dem Internet.</description>
-        <description lang="en">Advanced Launcher allows you to start any Linux, Windows and OS X applications (with command line support or not) directly from the Kodi GUI. Advanced Launcher also give you the possibility to edit, download (from Internet resources) and manage all the meta-data (informations and images) related to these applications.</description>
-        <description lang="fr">Advanced Launcher permet de lancer toutes les applications Linux, Windows and OS X (avec support des lignes de commandes ou non) directement depuis l'interface de Kodi. Advanced Launcher offre également la possibilité de modifier, télécharger (depuis les ressoures web) et de gérer toues les meta-donées (informations et images) relatives à ces applications.</description>
-        <description lang="fi">Advanced Launcherilla voit käynnistää Kodi:n käyttöliittymästä mitä tahansa sovelluksia. Käynnistettävistä sovelluksista voi hakea tietoja ja kuvia Internet-tietokannoista.</description>
-    </extension>
-</addon>
-
-<addon id="plugin.program.aptoide" version="2018.01.08" name="Aptoide for Kodi" provider-name="aenemapy">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.requests" />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="main.py">
-		<provides>video executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-        <description>Install/Download Apk from Aptoide APK Store</description>
-
-		<summary lang="en">Aptoide APK Store</summary>
-		<platform>all</platform>
-		<forum>-</forum>
-		<website>-</website>
-		<source>-</source>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<news>-</news>
-	</extension>
-</addon>
-
-<addon
-    id="plugin.program.repogenerator"
-    name="[COLOR lime]Kodi Repository Generator ( [COLOR gold]By Loki1979[/COLOR] )[/COLOR]"
-	version="1.2.4"
-    provider-name="[COLOR gold]Andre Albus * Loki1979[/COLOR]">
-    <requires>
-	    <import addon="xbmc.python" version="2.24.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="generator.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-	<platform>all</platform>
-	<summary>[COLOR lime]Kodi Repository Generator[/COLOR]</summary>
-	<description>Mit dem Kodi Repository Generator kann man
-ganz einfach eine eigene Kodi Repository erstellen !
-Ein Kodi Repository-Addon Beispiel( Rohling )ist mit enthalten !
-Die genaue Anleitung ist im Changelog des Addons zu finden !
-
-Der Kodi Repository Generator ist auf das Addon -
-Kodi Addon Zipper - von Loki1979 - abgestimmt !
-
-Hardware - Software - Kodi - DE
-https://www.facebook.com/groups/hskde/</description>
-	</extension>
-</addon>
-
 <addon id="plugin.video.freshstart" name="Fresh Start"
 	version="1.0.5" provider-name="tvaddons.ag">
   <requires>
@@ -252,34 +17,23 @@ https://www.facebook.com/groups/hskde/</description>
   </extension>
 </addon>
 
-<addon id="plugin.video.funkmediathek" name="Funk Mediathek" version="1.5.0" provider-name="sarbes">
-    <requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.libmediathek3" version="1.5.0"/>
-		<import addon="script.module.nexx" version="1.2.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-		<language>de</language>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<source>https://github.com/prof-membrane/plugin.video.funkmediathek</source>
-        <forum>https://forum.kodi.tv/showthread.php?tid=303100</forum>
-        <summary lang="en">This is an add-on for www.funk.net</summary>
-        <description lang="en">This add-on provides access to the German VOD platform www.funk.net. The content is only accessable from Germany.</description>
-        <summary lang="de">Serien und Videos von www.funk.net</summary>
-        <description lang="de">Dieses Add-on bietet Zugriff auf die Bibliothek von www.funk.net. Hier gibt es Serien wie z.B. Fargo in FullHD, aber auch Eigenproduktionen von ARD/ZDF. Die Serien sind in der Regel nur innerhalb Deutschlands erreichbar.</description>
-        <disclaimer lang="de">Dieses Add-on wird von keiner Sendeanstalt unterstützt und ist daher inoffiziell.</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
+<addon id="plugin.video.psybox.alpha.wizard" name="[COLOR blue]PsyBox[/COLOR] [COLOR white]Entertainment[/COLOR] [COLOR red]Wizard[/COLOR]" version="1.0.0" provider-name="c3pox86">
+  <requires>
+    <import addon="xbmc.python" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de"></summary>
+	<description lang="de">https://gitlab.com/c3pox86</description>
+		<disclaimer lang="de">Repo findet ihr hier http://ill-electronicx.bplaced.net/PsyBoxTV/</disclaimer>
+		<platform>all</platform>
+		<website>https://gitlab.com/c3pox86</website>
+	</extension>
 </addon>
 
-<addon id="plugin.video.psybox.alpha.wizard" name="[COLOR blue]PsyBox[/COLOR] [COLOR white]Entertainment[/COLOR] [COLOR red]Wizard[/COLOR]" version="1.0.0" provider-name="c3pox86">
+<addon id="plugin.video.usbwizard" name="USB-SDCARD WIZARD" version="1.1.6" provider-name=".[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -287,769 +41,330 @@ https://www.facebook.com/groups/hskde/</description>
         <provides>video executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="de">PsyBox Kodi Wizard</summary>
-    <description lang="de">PsyBox Entertainment Retrogaming und Streaming Alpha 1.4 version</description>
-	<website>https://github.com/psy86/PsyBoxTV</website>
+    <summary lang="en">USB-SDCARD WIZARD</summary>
+    <description lang="en">Configure XBMC with all the Best Goodies!</description>
     <platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.video.psytube" name="[COLOR blue]PsyTube[/COLOR] [COLOR red]YouTube[/COLOR] [COLOR white]Chanel[/COLOR]" version="1.0.1" provider-name="Psy86">
+<addon id="repository.entertainmentrepo" name="The Entertainment Repository" version="1.1" provider-name="Mr Entertainment">
+	<extension point="xbmc.addon.repository" name="Entertainment Addons Repository">
+        <dir>
+	      <info compressed="false">https://raw.github.com/MrEntertainment/EntertainmentREPO/master/addons.xml</info>
+	      <checksum>https://raw.github.com/MrEntertainment/EntertainmentREPO/master/addons.xml.md5</checksum>
+	      <datadir zip="true">https://raw.github.com/MrEntertainment/EntertainmentREPO/master/zips</datadir>
+        </dir>
+        <info compressed="false">https://raw.github.com/TheYid/My-Repo/master/addons.xml</info>
+        <checksum>https://raw.github.com/TheYid/My-Repo/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.github.com/TheYid/My-Repo/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary></summary>
+		<description>Download and install addons by Mr Entertainment</description>
+		<disclaimer>By using this, you take reponsibility for anything that happens. Some parts of this addon may not be legal in your country - please check with your local laws before installing. I take no responsibility for any problems this plugin might in any way shape or form. This is project is for a LEARNING EXPERIANCE.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.xbmc.org"
+		name="Kodi Add-on repository"
+		version="3.1.6"
+		provider-name="Team Kodi">
+  <requires>
+    <import addon="xbmc.addon" version="12.0.0"/>
+  </requires>
+	<extension point="xbmc.addon.repository">
+		<!-- Do not forget to bump add-on version when changing paths to force a repo refresh -->
+		<info>http://mirrors.kodi.tv/addons/leia/addons.xml.gz</info>
+		<checksum verify="sha256">http://mirrors.kodi.tv/addons/leia/addons.xml.gz?sha256</checksum>
+		<datadir>https://mirrors.kodi.tv/addons/leia</datadir>
+		<artdir>http://mirrors.kodi.tv/addons/leia</artdir>
+		<hashes>sha256</hashes>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="af_ZA">Installeer Byvoegsels vanaf Kodi.tv</summary>
+		<summary lang="am_ET">ከ Kodi.tv ተጨማ-ሪዎች መግጠሚያ </summary>
+		<summary lang="ar_SA">ثبت إضافات من موقع Kodi.tv الرسمي</summary>
+		<summary lang="be_BY">Усталяваць дадатак з Kodi.tv</summary>
+		<summary lang="bg_BG">Инсталира добавки от Kodi.tv</summary>
+		<summary lang="ca_ES">Instal·la complements des de Kodi.tv</summary>
+		<summary lang="cs_CZ">Instalovat doplňky z Kodi.tv</summary>
+		<summary lang="cy_GB">Gosod Ychwanegion o Kodi.tv</summary>
+		<summary lang="da_DK">Installer add-ons fra Kodi.tv</summary>
+		<summary lang="de_DE">Installiere Addons von Kodi.tv</summary>
+		<summary lang="el_GR">Εγκατάσταση Προσθέτων από το Kodi.tv</summary>
+		<summary lang="en_AU">Install Add-ons from Kodi.tv</summary>
+		<summary lang="en_GB">Install Add-ons from Kodi.tv</summary>
+		<summary lang="en_NZ">Install Add-ons from Kodi.tv</summary>
+		<summary lang="en_US">Install Add-ons from Kodi.tv</summary>
+		<summary lang="es_AR">Instalar Add-ons de Kodi.tv</summary>
+		<summary lang="es_ES">Instalar Add-ons de Kodi.tv</summary>
+		<summary lang="es_MX">Installar Add-ons de Kodi.tv</summary>
+		<summary lang="et_EE">Paigalda lisasid Kodi.tv lehelt</summary>
+		<summary lang="eu_ES">Instalatu Kodi.tv-eko gehigarriak</summary>
+		<summary lang="fa_IR">‫نصف افزونه‌ها از Kodi.tv</summary>
+		<summary lang="fi_FI">Asenna lisäosia Kodi.tv -sivustolta</summary>
+		<summary lang="fr_CA">Installer des addiciels depuis Kodi.tv</summary>
+		<summary lang="fr_FR">Installer des extensions depuis Kodi.tv</summary>
+		<summary lang="gl_ES">Instalar complementos dende Kodi.tv</summary>
+		<summary lang="he_IL">התקנת הרחבות מ־Kodi.tv</summary>
+		<summary lang="hr_HR">Instaliraj dodatke s Kodi.tv</summary>
+		<summary lang="hu_HU">Kiegészítők letöltése az Kodi.tv-ról</summary>
+		<summary lang="id_ID">Pasang Pengaya dari Kodi.tv</summary>
+		<summary lang="is_IS">Setja inn viðbætur frá Kodi.tv</summary>
+		<summary lang="it_IT">Installa addon da Kodi.tv</summary>
+		<summary lang="ja_JP">Kodi.tv からアドオンをインストール</summary>
+		<summary lang="ko_KR">Kodi.tv에서 애드온 설치</summary>
+		<summary lang="lt_LT">Įdiegti priedus iš Kodi.tv</summary>
+		<summary lang="lv_LV">Instalēt pielikumus no Kodi.tv</summary>
+		<summary lang="mk_MK">Инсталирај Додатоци од Kodi.tv</summary>
+		<summary lang="ms_MY">Pasang tambahan daripada Kodi.tv</summary>
+		<summary lang="mt_MT">Installa Add-ons minn Kodi.tv</summary>
+		<summary lang="my_MM">Kodi.tv မှ Add-on များကိုသွင်းမည်</summary>
+		<summary lang="nb_NO">Installer utvidelser fra Kodi.tv</summary>
+		<summary lang="nl_NL">Add-ons van Kodi.tv installeren</summary>
+		<summary lang="pl_PL">Instaluj dodatki z Kodi.tv</summary>
+		<summary lang="pt_BR">Instale Add-ons do Kodi.tv</summary>
+		<summary lang="pt_PT">Instalar Add-ons a partir de Kodi.tv</summary>
+		<summary lang="ro_RO">Instalați suplimente de la Kodi.tv</summary>
+		<summary lang="ru_RU">Установить дополнения с сайта Kodi.tv</summary>
+		<summary lang="sk_SK">Inštalovať doplnky z Kodi.tv</summary>
+		<summary lang="sl_SI">Namestite dodatke s Kodi.tv</summary>
+		<summary lang="sr_RS">Инсталирај додатне програме са Kodi.tv</summary>
+		<summary lang="sr_RS@latin">Instaliraj dodatne programe sa Kodi.tv</summary>
+		<summary lang="sv_SE">Installera tillägg från Kodi.tv</summary>
+		<summary lang="szl">Insztaluj przidŏwki ze Kodi.tv</summary>
+		<summary lang="tg_TJ">Насб кардани барномаҳои иловагӣ аз Kodi.tv</summary>
+		<summary lang="th_TH">ติดตั้งส่วนเสริมจาก Kodi.tv</summary>
+		<summary lang="tr_TR">Kodi.tv sitesinden eklentileri yükle</summary>
+		<summary lang="uk_UA">Встановити додатки з Kodi.tv</summary>
+		<summary lang="vi_VN">Cài đặt Add-on từ Kodi.tv</summary>
+		<summary lang="zh_CN">从 Kodi.tv 安装插件</summary>
+		<summary lang="zh_TW">從 Kodi.tv 安裝附加元件</summary>
+		<description lang="af_ZA">Aflaai en installeer byvoegsels vanaf die Amptelike Kodi.tv byvoegsel kodebank.[CR] Deur die amptelike Kodebank te gebruik trek jy voordeel van ons uitgebreide lêer spieël diens wat jou help vinniger aflaai vanaf 'n gebied naby aan jou.[CR] Alle byvoegsels in die kodebank het basiese toetsing ondergaan, as jy 'n gebreekte of nie werkende byvoegsel vind rapporteer dit asseblief aan die Kodi Span sodat ons die nodige stappe kan neem.</description>
+		<description lang="ar_SA">حمل و ثبت الإضافات من مستودع الإضافات لموقع Kodi.tv الرسمي.[CR] باستخدامك المستودع الرسمي ستكون قادر على الاستفادة مما نقدمه من خدمة حصرية لتوفير خوادم بديله لتحميل الملفات توفر لك سرعة تحميل أعلى من منطقه قريبة منك.[CR] جميع الإضافات في هذا المستودع خضعت لاختبارات مبدئية, إذا صادفتك إضافة معطوبة أو لا تعمل برجاء الإبلاغ عنها لفريق Kodi لنتمكن من اتخاذ الإجراء اللازم.</description>
+		<description lang="be_BY">Спампаваць і ўсталяваць дадатак з афіцыйнага рэпазітара Kodi.tv . [CR] Пры выкарыстанні афіцыйнага рэпазітара вы зможаце скарыстацца нашым сэрвісам люстэрак, каб у вас была больш хуткая спампоўка з рэгіёна, бліжэйшага да вас . [CR] Усе дадаткі ў гэтым рэпазітары былі пратэставаныя, калі вы выявілі зламаны ці не працуючы дадатак, калі ласка, паведаміце пра гэта камандзе Kodi, каб мы маглі гэта выправіць.</description>
+		<description lang="bg_BG">Сваля и инсталира добавки от официалното хранилище за добавки на Kodi.tv. Ползвайки добавката ще се възползвате от системата ни от огледални сървъри - за да сваляте с висока скорост, от сървър близък до Вас. Добавките от хранилището са минали няколко теста, но ако се натъкнете на неработеща или проблемна добавка, моля уведомете екипа на Kodi, за да бъдат предприети необходимите действия.</description>
+		<description lang="ca_ES">Baixeu i instal·leu els complements des del dipòsit oficial de Kodi.tv.[CR] Mitjançant el dipòsit oficial, podreu aprofitar els avantatges del nostre servei de rèplica de fitxers per ajudar-vos a tenir unes baixades més ràpides des d'una regió que estigui a prop vostre.[CR] Tots els complements d'aquest dipòsit han passat per proves bàsiques, així que si trobeu algun complement que no funcioni correctament, si us plau, digueu-ho a l'equip de Kodi perquè puguin dur a terme les accions pertinents.</description>
+		<description lang="cs_CZ">Stáhnout a nainstalovat doplňky z oficiálního repozitáře doplňků Kodi.tv.[CR] Použitím oficiálního repozitáře budete moci využít naši rozsáhlou službu zrcadel souborů, která vám pomůže rychleji stahovat z oblasti blízko vás.[CR] Všechny doplňky v tomto repozitáři prošly základním testováním. Pokud najdete rozbitý nebo nefunkční doplněk, oznamte to týmu Kodi, abychom mohli přijmout veškerá nezbytná opatření.</description>
+		<description lang="cy_GB">Llwytho i lawr a gosod ychwanegion o storfa ychwanegion Swyddogol Kodi.tv.{CR}Drwy ddefnyddio'r Storfa swyddogol bydd modd i chi gymryd mantais o'n gwasanaeth drychau ffeiliau i'ch cynorthwyoi lwytho i lawr yn gyflym o ardal yn agos i chi.[CR] Mae pob ychwnaegyn yn y storfa hwn wedi eu profi'n fras, os ydych yn canfod ychwanegyn sydd wedi torri  neu ddim yn gweithio yna hysbyswch Team Kodi fel bod modd i ni weithredu.</description>
+		<description lang="da_DK">Hent og installer add-ons fra det officielle Kodi.tv add-on fjernlager.[CR] Ved at bruge det officielle fjernlager drager du fordel af vores omfattende spejltjeneste, som gør at du kan hente hurtigere fra et sted nær dig.[CR]  Alle add-ons i dette fjernlager har gennemgået grundlæggende tests. Hvis du finder en defekt add-on, så rapporter venligst dette til Team Kodi, så vi kan tage hånd i hanke med eventuelle problemer.</description>
+		<description lang="de_DE">Dies ist das offizielle Kodi.tv Addon-Verzeichnis.[CR]Dieses Addon-Verzeichnis ermöglicht aufgrund umfangreicher Spiegelserver in der Nähe schnelle Downloads.[CR]Alle Addons in diesem Verzeichnis wurden einfachen Tests unterzogen. Sollte dennoch ein Addon nicht richtig funktionieren benachrichtige bitte Team Kodi, damit wir reagieren können.</description>
+		<description lang="el_GR">Πραγματοποιήστε λήψη και εγκατάσταση προσθέτων από το επίσημο αποθετήριο του Kodi.tv.[CR]  Χρησιμοποιώντας το Επίσημο Αποθετήριο μπορείτε να εκμεταλλευτείτε τους εκτεταμένους διακομιστές αρχείων μας για ταχύτερες λήψεις από μία κοντινή σας περιοχή.[CR]  Όλα τα πρόσθετα σε αυτό το αποθετήριο έχουν περάσει τις στοιχειώδεις δοκιμές, αν βρείτε ένα κατεστραμμένο ή ανενεργό πρόσθετο παρακαλούμε να το αναφέρετε στην Ομάδα Kodi ούτως ώστε να πραγματοποιηθούν οι απαραίτητες ενέργειες.</description>
+		<description lang="en_AU">Download and install add-ons from the Official Kodi.tv add-on repository.[CR]  By using the official Repository you will be able to take advantage of our extensive file mirror service to help get you faster downloads from a region close to you.[CR]  All add-ons on this repository have undergone basic testing, if you find a broken or not working add-on please report it to Team Kodi so we can take any action needed.</description>
+		<description lang="en_GB">Download and install add-ons from the Official Kodi.tv add-on repository.[CR]  By using the official Repository you will be able to take advantage of our extensive file mirror service to help get you faster downloads from a region close to you.[CR]  All add-ons on this repository have under gone basic testing, if you find a broken or not working add-on please report it to Team Kodi so we can take any action needed.</description>
+		<description lang="en_NZ">Download and install add-ons from the Official Kodi.tv add-on repository.[CR]  By using the official Repository you will be able to take advantage of our extensive file mirror service to help get you faster downloads from a region close to you.[CR]  All add-ons on this repository have under gone basic testing, if you find a broken or not working add-on please report it to Team Kodi so we can take any action needed.</description>
+		<description lang="en_US">Download and install add-ons from the Official Kodi.tv add-on repository.[CR]  By using the official Repository you will be able to take advantage of our extensive file mirror service to help get you faster downloads from a region close to you.[CR]  All add-ons on this repository have under gone basic testing, if you find a broken or not working add-on please report it to Team Kodi so we can take any action needed.</description>
+		<description lang="es_AR">Descarga e instala el complemento desde el repositorio oficial de Kodi.tv.[CR] Usando el repositorio oficial tendrá las ventajas de nuestro servicio de réplicas para ayudarle a conseguir unas descargas más rápidas de un sitio cercano a su región.[CR] Todos los complementos en este repositorio han pasado por un periodo de pruebas básico, pero si encuentra algún complemento que no funciona, por favor infórmelo al equipo de Kodi para que podamos tomar las acciones necesarias.</description>
+		<description lang="es_ES">Descarga e instala add-ons desde el repositorio oficial de Kodi.[CR]  Usando el repositorio oficial podrá aprovecharse de nuestro servicio de mirrors para poder descargar más rápidamente desde un sitio cercano.[CR]  Todos los add-ons de este repositorio han pasado por un periodo de pruebas básico, pero si encontrara alguno que no funcionase, por favor, avise al equipo de Kodi para solucionar el problema.</description>
+		<description lang="es_MX">Descarga e instala add-ons del repositorio oficial Kodi.tv.[CR] Al usar el repositorio oficial, tendrá la ventaja de los servicios de espejos, y así tener descargas más rápidas.[CR] Todos los add-ons en este repositorio se han probado de manera básica, si encuentra alguno que no funciona o roto, favor de reportarlo al Equipo de Kodi para poder tomar las medidas necesarias.</description>
+		<description lang="et_EE">Lae alla ja installi lisasid ametlikust Kodi.tv hoidlast.[CR]  Ametliku hoidla kasutamise eeliseks on võimalus kasutada meie ulatuslikku failide peegelteenust laadides faile sulle kõige lähemast serverist.[CR]  Kõik lisad selles hoidlas on läbinud elementaarse testimise. Siiski, kui sa leiad vigase või mittetöötava lisa, siis palun teavita sellest Kodi meeskonda, et me saaksime vajaliku abi osutada.</description>
+		<description lang="eu_ES">Deskargatu eta instalatu gehigarriak Kodi.tv biltegi ofizialetik.[CR]  &#10;Biltegi ofiziala erabiliz zugandik gertu dagoen gune batetik deskargatu&#10;ditzakezu gure fitxategi-ispilu zerbitzu zabalaren abantailaz aprobetxatuaz.[CR]  &#10;Biltegi honetako gehigarri guztiek oinarrizko probak gainditu dituzte baina hondaturiko edo funtzionatzen ez duen gehigarri baten bat aurkituz gero jakinarazi Kodi taldeari beharrezko ekintzak burutu ditzagun.</description>
+		<description lang="fa_IR">افزودنی ها را از منبع رسمی افزونه ها در Kodi.tv دانلود و نصب کنید. [CR] با استفاده از منبع رسمی شما قادر خواهید بود از خدمات گسترده سرویس دانلود جایگزین ما بهره ببرید که امکان دانلود از مناطق نزدیکتر را در اختیار شما قرار می دهد. [CR] همه افزونه های این منبع آزمایش های اولیه را پشت سر گذاشته اند. در صورت یافتن افزونه معیوب یا غیر قابل استفاده لطفا آن را به تیم کودی گزارش کنید تا اقدامات لازم را انجام دهیم.</description>
+		<description lang="fi_FI">Lataa ja asenna lisäosia virallisesta Kodi.tv lisäosien ohjelmavarastosta.[CR]  Käyttämällä virallista ohjelmavarastoa sinun on mahdollista käyttää hyväksesi meidän kattavaa tiedostojen peilauspalveluamme saavuttaaksesi korkeat latausnopeudet sinun lähialueeltasi.[CR]  Kaikki tämän ohjelmavaraston lisäosat on testattu toimiviksi, jos löydät rikkinäisen tai "ei toimivan" lisäosan, ilmoita siitä Team Kodille, jotta voimme korjata asian.</description>
+		<description lang="fr_CA">Télécharger et installer des addiciels depuis le dépôt officiel de Kodi.tv.[CR] En utilisant le dépôt officiel vous pourrez bénéficier de notre service étendu de miroirs de fichiers favorisant des téléchargements plus rapides depuis une région proche de vous.[CR] Tous les addiciels de ce dépôt ont subi des tests de base. Si vous trouvez un addiciel non fonctionnel ou brisé, veuillez le rapporter à l’équipe Kodi afin que nous puissions agir.</description>
+		<description lang="fr_FR">Télécharger et installer des extensions à partir du dépôt officiel Kodi.tv.[CR]En utilisant le dépôt officiel, vous bénéficierez de notre service de serveurs miroirs permettant de télécharger rapidement depuis une région proche de chez vous.[CR]Toutes les extensions de ce dépôt ont subi des tests de base, si vous trouvez une extension totalement ou en partie inutilisable, merci d'en informer l'Équipe Kodi afin que nous puissions prendre les mesures nécessaires.</description>
+		<description lang="gl_ES">Descargar e instalar complementos dende o repositorio oficial de Kodi.tv.[CR] Empregando o repositorio oficial, poderás gozar das vantaxes do seu extenso servizo de replicación de ficheiros que che permite unhas descargas máis rápidas dende unha rexión preto á túa.[CR] Tódolos complementos deste repositorio pasaron por comprobacións básicas. Se atopas algún complemento roto ou non funcional, por favor informa ao equipo de Kodi para que poidan actuar en consecuencia.</description>
+		<description lang="he_IL">הורדה והתקנת הרחבות ממאגר הרחבות Kodi.tv הרשמי.[CR] שימוש במאגר הרשמי מאפשר לנצל את שירות שיקוף הקבצים של Kodi.tv העוזר להוריד מהר יותר מהשרת הקרוב ביותר.[CR] כל ההרחבות במאגר זה עברו בדיקה בסיסית. יש לדווח לצוות הפיתוח של Kodi על כל הרחבה שנמצאה כלא תקינה או שלא עובדת ע"מ שתתבצע הפעולה המתאימה.</description>
+		<description lang="hr_HR">Preuzmite i instalirajte dodatke sa službenog Kodi.tv repozitorija dodataka.[CR] Korištenjem službenog repozitorija bit ćete u mogućnosti iskoristiti prednosti usluge našeg brzog zrcalnog poslužitelja datoteka, kako bi mogli brže preuzimati iz regije koje je bliže vašoj lokaciji.[CR] Svi dodaci na ovom repozitoriju prošli su osnovno testiranje, u slučaju da primijetite neispravan dodatak, molimo vas da to prijavite Kodi timu koji će zatim poduzeti potrebne korake.</description>
+		<description lang="hu_HU">Kiegészítők letöltése és telepítése a hivatalos Kodi.tv tárolóhelyről.[CR] A hivatalos tárolóhely használatával kihasználhatod szerteágazó tükör-kiszolgáló hálózatunkat, ami segít a gyorsabb letöltésben egy hozzád közelebb eső körzet használatával.[CR]  Minden kiegészítő ezen a tárolóhelyen átment egy alaptesztelésen. Ha mégis hibás vagy nem működő kiegészítőt találsz, kérünk jelezd az Kodi csapatnak, hogy megtegyük a szükséges lépéseket.</description>
+		<description lang="id_ID">Unduh dan pasang pengaya dari repositori pengaya resmi Kodi.tv. [CR] Dengan menggunakan repositori resmi anda akan mendapat keuntungan dari miror berkas kami yang luas dimana dapat membantu anda untuk lebih cepat mengunduh dari daerah yang dekat dengan anda. [CR] Semua pengaya pada repository telah melalui uji coba standar, jika anda menemukan pengaya yang rusak atau tidak bekerja tolong laporkan kepada tim Kodi agar kami bisa menindak lanjutinya.</description>
+		<description lang="is_IS">Sækja og setja inn viðbætur frá hinu viðurkennda Kodi.tv viðbótasafni.[CR] Með því að nota þetta safn getur þú nýtt þér möguleikann á fullkominni speglunarþjónustu sem hjálpar við að sækja hraðar viðbætur frá landsvæði nálægt þér.[CR] Allar viðbætur í þessu safni hafa gengið undir grunnprófanir, ef þú finnur viðbætur sem eru bilaðar eða virka ekki, endilega láttu Kodi-teymið vita svo við getum gert eitthvað í málinu.</description>
+		<description lang="it_IT">Scarica e installa gli add-on dalla libreria ufficiale di Kodi.tv.[CR]  Usando la libreria ufficiale avrai il vantaggio di ottenere download più veloci con mirror più vicini alla tua località.[CR]  Tutti gli add-on in questa libreria sono stati sottoposti a test di base, se ne trovi uno non funzionante o corrotto, per favore riporta il problema al team di Kodi così potremmo prendere provvedimenti.</description>
+		<description lang="ja_JP">オフィシャルの Kodi.tv リポジトリからアドオンをダウンロードします。[CR]  オフィシャルリポジトリを使うことで、お住まいのエリアに近いミラーサーバーから高速にアドオンをダウンロードすることが可能です。[CR]  このリポジトリ上のアドオンは全て、簡単な動作テストを受けてはいますが、もしアドオンがおかしかったりうまく動作しなかったりした場合は、Kodi チームに連絡をお願いします。</description>
+		<description lang="ko_KR">공식 Kodi.tv 애드온 저장소에서 애드온을 다운로드하여 설치합니다.[CR] 공식 저장소를 사용하면 파일 미러링 서비스를 통해 사용자와 가까운 곳에서 빠르게 다운로드할 수 있습니다.[CR] 저장소의 모든 애드온은 기본 테스트를 거치지만 작동이 되지 않거나 손상된 애드온을 발견하면 필요한 조치를 취할 수 있게 Team Kodi로 알려주시기 바랍니다.</description>
+		<description lang="lt_LT">Atsisiųskite ir įdiegite priedus iš oficialios Kodi.tv saugyklos.[CR]Naudojantis oficialia saugykla, galėsite pasinaudoti pranašumu mūsų didele failų veidrodinę paslauga.[CR]Taip pat siekiame padėti jums greičiau parsisiųsti priedą iš Jūsų regiono.[CR]Visiems šioje saugykloje saugomiems priedams buvo atliktas testavimas, jei Jūs radote netaisyklingą ir nedarbinį priedą.[CR]Prašome pranešti apie tai Kodi komandai, kad mes galėtume imtis būtinų veiksmų </description>
+		<description lang="lv_LV">Lejupielādējiet un instalējiet pielikumus no oficiālā Kodi.tv pielikumu repozitorija[CR] Izmantojot oficiālo repozitoriju, varēsiet izmantot mūsu plašo spoguļu pakalpojumu, lai iegūtu ātrākas lejupielādes no reģiona, kas vistuvāk.[CR] Visi pielikumi šajā repozitorijā ir izgājuši pamata testēšanu, bet, ja atrodat saplīsušu vai nestrādājošu pielikumu, lūdzu, ziņojiet par to Team Kodi, lai varam izpildīt nepieciešamās labošanas darbības.</description>
+		<description lang="mk_MK">Превземи и инсталирај Додатоци од официјалниот Kodi.tv склад.[CR] Со користење на официјалниот склад ќе бидете во можност да ги користите предностите на нашата богата датотека со услуги која ви помага да добиете побрзи превземања од регионот блиску до вас.[CR]  Сите Додатоци во овој склад се основно тестирани, ако најдете неисправни или додатоци кои не работат пријавете го тоа на тимот на Kodi така што ќе можеме да превземеме било каква акција што е потребна.</description>
+		<description lang="ms_MY">Muat turun dan pasang tambahan PVR melalui repositori rasmi Kodi.tv[CR]  Dengan menggunakan Repositori rasmi anda dapat perkhidmatan cermin fail yang luas supaya dapat memuat turun lebih pantas menerusi kawasan berhampiran anda.[CR]  Semua tambahan di dalam repositori ini telah lulus pengujian asas, jika anda temui tambahan yang rosak atau tidak berfungsi sila laporkannya kepada Team Kodi supaya kami boleh membuat tindakan yang sewajarnya.</description>
+		<description lang="mt_MT">Niżżel u nstalla add-ons mir-repożitorju uffiċjali ta Kodi.tv.[CR] Permezz ta' dan ir-ripożitorju uffiċjali tista' tieħu vantaġġ mis-servizz ta' file mirrors estensiv li jgħinek tniżżel l-add-ons iktar malajr minn postijiet li huma ġeografikament qrib tiegħek.[CR] L-Add-ons kollha f'dan ir-repożitorju għaddew minn testijiet bażiċi, f'każ li tinzerta xi add-on miksura jew mhux taħdem jekk jpgħġbok irrportha lil Team Kodi biex inkunu nistgħu nieħdu l-azzjoni li jkun hemm bżonn.</description>
+		<description lang="nb_NO">Last ned og installer utvidelser fra den offisielle Kodi.tv-pakkebrønnen.[CR] Når du benytter den offisielle pakkebrønnen kan du dra nytte av vår omfattende arkivtjeneste slik at du får raskere nedlasting fra en tjener nær deg.[CR] Alle tillegg i denne brønnen har gått gjennom grunnleggende testing, men hvis du finner en utvidelse som ikke fungerer, rapporter det til Team Kodi, så vi får sett på det.</description>
+		<description lang="nl_NL">Download en installeer add-ons uit de officiële Kodi.tv add-on depot.[CR]Wanneer u de officiële depot gebruikt beschikt u over onze uitgebreide mirrorservice, waardoor u snel kunt downloaden van locaties in uw buurt.[CR] Alle add-ons in dit depot ondergingen standaardtests. Indien u een defecte of niet-werkende add-on vindt, meld dit dan aan Team Kodi zodat zij actie kunnen ondernemen.</description>
+		<description lang="pl_PL">Pobieraj i instaluj dodatki z oficjalnego repozytorium Kodi.tv.[CR] Używając oficjalnego repozytorium korzystasz z serwerów lustrzanych, rozsianych po całym świecie. Wybierany jest ten, który znajduje się najbliżej ciebie, zapewniając dużą prędkość połączenia.[CR]Wszystkie dodatki znajdujące się w tym repozytorium są testowane, ale mogą okazać się niesprawne. Zgłoś wówczas błąd, aby zespół Kodi mógł podjąć odpowiednie działanie.</description>
+		<description lang="pt_BR">Transfira e instale add-ons a partir do repositório oficial do Kodi.tv.[CR]|Ao utilizar o repositório oficial, você será capaz de tirar proveito do nosso serviço de espelhamento de arquivos, auxiliando em downloads mais rápidos a partir de uma região perto de você.[CR]|Todos os add-ons neste repositório passam por testes básicos, se você encontrar algum quebrado ou que não esteja funcionando, por favor reporte para a equipe do Kodi, para que possamos tomar as ações necessárias.</description>
+		<description lang="pt_PT">Transferir e instalar add-ons a partir do repositório de add-ons oficiais de Kodi.tv.[CR]Ao utilizar o Repositório oficial, irá beneficiar do nosso serviço de servidores de ficheiros para o ajudar a ter transferências mais rápidas da região mais perto de si.[CR]Todos os Add-ons neste repositório foram alvo de testes básicos. Se encontrar um danificado ou que não funciona, por favor, informe Tema Kodi, para que a situação seja resolvida.</description>
+		<description lang="ro_RO">Descărcați și instalați suplimente din depozitul de suplimente Kodi.tv oficial.[CR]  Folosind depozitul (repository) oficial puteți beneficia de serviciul nostru de găzduire distribuită pentru a vă ajuta să descărcați mai repede dintr-o regiune mai apropiată de dumneavoastră.[CR]  Toate suplimentele din acest depozit au trecut testele de bază, în caz că găsiți un supliment defect vă rugăm să îl raportați echipei Kodi pentru a lua măsurile necesare.</description>
+		<description lang="ru_RU">Загружайте и устанавливайте обновления из официального репозитория Kodi.tv[CR]Используя официальный репозиторий, вы сможете воспользоваться преимуществами распределенного хранилища для быстрой загрузки файлов с ближайшего к вам сервера.[CR]Все дополнения в данном репозитории прошли тестирование. Если вы обнаружили нерабочее дополнение, сообщите об этом разработчикам Kodi.</description>
+		<description lang="sk_SK">Stiahnuť a nainštalovať doplnky z oficiálneho zdroja doplnkov Kodi.tv.[CR] Použitím oficiálneho zdroja získavate možnosť využiť rozsiahly systém serverov, ktorý Vám umožní rýchlejšie sťahovanie z vám blízkeho regiónu.[CR] Všetky doplnky v tomto zdroji boli podrobené základnému testovaniu. Ak nájdete poškodené alebo nefunkčné doplnky, oznámte to prosím týmu Kodi aby mohol podľa potreby zakročiť.</description>
+		<description lang="sl_SI">Prenos in namestitev dodatkov iz uradnega skladišča Kodi.tv.[CR] Z uporabo uradnega skladišča, boste lahko izkoristili hitrejšo povezavo, ki bo izbrana glede na vašo lokacijo.[CR] Vsi dodatki tega skladišča so bili osnovno stestirani, če pa boste našli pokvarjen ali nedelujoč dodatek, to sporočite ekipi Kodi, da bomo lahko odpravili napake.</description>
+		<description lang="sr_RS">Преузмите и инсталирајте додатке из Званичног Kodi.tv спремишта додатака.[CR] Коришћењем званичног Спремишта моћићете да искористите предности нашег сервиса копија фајлова који ће вам помоћи приликом бржег преузимања из региона ближег вашој локацији.[CR] Сви додаци у овом спремишту прошли су основно тестирање, у случају да пронађете неисправан додатак молимо вас да то пријавите Kodi тиму који ће затим предузети неопходне мере.</description>
+		<description lang="sr_RS@latin">Preuzmi i instaliraj dodatne programe iz Zvaničnog Kodi.tv spremišta za dodatne programe.[CR] Korišćenjem zvaničnog Spremišta moći ćete da iskoristite prednosti našeg servisa kopija fajlova koji će vam pomoći prilikom bržeg preuzimanja iz regiona bližeg vašoj lokaciji.[CR] Svi dodatni programi u ovom spremištu prošli su osnovno testiranje, u slučaju da pronađete neispravan dodatni program molimo vas da to prijavite Kodi timu koji će zatim preduzeti neophodne mere.</description>
+		<description lang="sv_SE">Ladda ner och installera tillägg från det officiella Kodi.tv tilläggsförrådet.[CR] Genom att använda det officiella förrådet kommer du att få fördelen att kunna använda vår omfattande spegeltjänst som kommer att hjälpa dig till snabbare nedladdningar från en plats nära dig.[CR] Alla tillägg i detta förråd har genomgått grundläggande tester. Hittar du ett trasigt eller icke fungerande tillägg, vänligen meddela detta till Team Kodi så att vi kan vidta nödvändiga åtgärder.</description>
+		<description lang="szl">Sebiyrej i insztaluj przidŏwki z ôficjalnygo repozytoriōm Kodi.tv.[CR] Przi Używaniu ôficjalnygo repozytoriōm używŏsz serwerōw zdrzadłowych, rozsianych po calistym świecie. Ôbiyrany je tyn, kery je nŏjbliżyj ciebie, co istuje srogõ wartkość skuplowaniŏ.[CR]Wszyjske przidŏwki w tym repozytoriōm sōm testowane, ale mogōm pokŏzać sie popszniōne. Zgłoś wtynczŏs feler, coby ekipa Kodi mogła go sprŏwić.</description>
+		<description lang="tg_TJ">Барномаҳои иловагиро аз анбори нармафзори Kodi.tv боргирӣ кунед ва насб намоед.[CR]  Аз истифодаи анбори нармафзори расмии мо ба шумо имконият пайдо мешавад, ки тавонед шароити мусофидро аз хидмати оинаи файлии васеъ ба даст оред ва нармафзори лозимиро аз сервери минтакаи ба шумо наздиктар бо суръати баланд боргирӣ кунед.[CR]  Ҳамаи барномаҳо аз анбори нармафзори мо дар ҳолати санҷишӣ мебошанд, бинобар ин агар ягон барномаи иловагии нуқсондор ё вайроншударо ёбед, лутфан дар бораи он барнома ва нуқсон пайдошуда ба гурӯҳи кории Kodi гузориш диҳед, то ин ки мо тавонем ҳамаи камбудиҳои барномаҳои моро ҳал кунем.</description>
+		<description lang="th_TH">ดาวน์โหลดและติดตั้งส่วนเสริม จากแหล่งข้อมูลโปรแกรมของ Kodi.tv อย่างเป็นทางการ.[CR]  โดยการใช้งานแหล่งข้อมูลโปรแกรมอย่างเป็นทางการ คุณสามารถใช้ประโยชน์จากบริการแฟ้มมิเรอร์ที่กว้างขวางของเรา ที่จะช่วยให้การดาวน์โหลดของคุณเร็วขึ้นจากภูมิภาคที่ใกล้ที่สุด.[CR]  ส่วนเสริม ทั้งหมดในแหล่งเก็บข้อมูลนี้ อยู่ภายใต้การทดสอบขั้นพื้นฐานแล้ว ถ้าคุณพบส่วนเสริมที่เสียหายหรือไม่ทำงาน กรุณาแจ้งทีมงาน Kodi เพื่อให้เราสามารถดำเนินการใด ๆ ที่จำเป็น.</description>
+		<description lang="tr_TR">Eklentileri resmi Kodi.tv eklenti deposundan indir ve yükle.[CR]Resmi yazılım depomuzu kullanarak size en yakın bölgeden en hızlı biçimde indirme yapmanızı sağlayacak gelişkin dosya aynalama servisini kullanma avantajını elde edeceksiniz.[CR]Bu yazılım deposundaki tüm eklentiler temel testlerden geçerler, şayet hatalı ya da çalışmayan bir eklenti bulur iseniz lütfen düzeltilmesi için bu durumu Kodi Takımına bildiriniz.</description>
+		<description lang="uk_UA">Завантажити і встановити додатки з Офіційного репозиторію додатків Kodi.tv.[CR]  Використовуючи Офіційний Репозиторій ви отримаєте перевагу надану нашими дзеркальними серверами, які забезпечать вам швидке завантаження із найближчого до вас регіону.[CR]  Всі додатки в цьому Репозиторії пройшли лише базове тестування. Якщо ви знайшли зламаний або непрацюючий додаток, будь-ласка повідомте про це Команду Kodi щоб ми могли вжити потрібних заходів.</description>
+		<description lang="vi_VN">Tải về và cài đặt add-on từ kho addon chính thức của Kodi.[CR]  Khi sử dụng kho chứa này bạn sẽ hưởng lợi từ dịch vụ tạo nguồn của chúng tôi, giúp bạn có thể tải về nhanh hơn từ vùng địa lý gần bạn.[CR]  Tất cả addon trên kho chứa này đã được thông qua bài kiểm tra cơ bản, nếu bạn phát hiện ra một addon không hoạt động xin vui lòng báo cáo lại nó cho đội ngũ Kodi để chúng tôi có thể kịp thời xử lý.</description>
+		<description lang="zh_CN">从官方 Kodi.tv 插件库下载和安装插件。[CR]　通过官方插件库你将能利用我们广泛的镜像服务优势，使你能够就近下载资源。[CR]　官方库中的所有插件都经过了基本的测试，如果你发现有损坏或不能正常工作的插件请向 Kodi 开发团队报告，以便及时处理。</description>
+		<description lang="zh_TW">從 Kodi.tv 官方的附加元件庫下載並安裝附加元件。[CR] 使用官方的附加元件庫你可以從離你較近的檔案鏡像伺器以較快的速度下載附加元件。[CR] 在這個附加元件庫中的附加元件都經過簡單的測試，如果你發現損壞或無法正常工作的附加元件，請回報給 Kodi 團隊，以讓 Kodi 團隊能做一些必須的處置。</description>
+		<disclaimer lang="af_ZA">Die Kodi span het nie al die byvoegsels in die kodebank gemaak nie en is nie verantwoordelik vir hulle inhoud nie</disclaimer>
+		<disclaimer lang="am_ET">የ Kodi ቡድን እዚህ ማጠራቀሚያ ውስጥ ያሉትን የ ተጨማ-ሪዎች ይዞታ አልፈጠሩም ስለዚህም ምንም አይነት ሀላፊነት አይወስዱም</disclaimer>
+		<disclaimer lang="ar_SA">فريق Kodi لم يقم بصنع جميع اﻹضافات فى هذا المستودع وغير مسؤول عن محتواها</disclaimer>
+		<disclaimer lang="be_BY">Каманда Kodi не распрацоўвае усё дадаткі ў гэтым рэпазітары і не нясе адказнасці за іх змесціва</disclaimer>
+		<disclaimer lang="bg_BG">Екипът на Kodi не е автор на всички добавки в хранилището и не носи отговорност за съдържанието им.</disclaimer>
+		<disclaimer lang="ca_ES">L'equip de Kodi no ha fet tots els complements d'aquest dipòsit i per tant no són responsables del seu contingut.</disclaimer>
+		<disclaimer lang="cs_CZ">Tým Kodi nevytvořil všechny doplňky v tomto repozitáři a není zodpovědný za jejich obsah</disclaimer>
+		<disclaimer lang="cy_GB">Nid Team Kodi wnaeth yr holl ychwanegion yn y storfa hon ac nid ydynt yn gyfrifol am eu cynnwys.</disclaimer>
+		<disclaimer lang="da_DK">Team Kodi har ikke lavet alle add-ons i dette fjernlager og er ikke ansvarlig for deres indhold</disclaimer>
+		<disclaimer lang="de_DE">Die Addons in diesem Verzeichnis wurden nicht alle vom Team Kodi erstellt. Verantwortlich für den Inhalt sind die jeweiligen Autoren.</disclaimer>
+		<disclaimer lang="el_GR">Η Ομάδα Kodi δεν δημιούργησε όλα τα πρόσθετα σε αυτό το αποθετήριο συνεπώς δεν είναι υπεύθυνη για το περιεχόμενό τους</disclaimer>
+		<disclaimer lang="en_AU">Team Kodi did not make all the add-ons on this repository and are not responsible for their content</disclaimer>
+		<disclaimer lang="en_GB">Team Kodi did not make all the add-ons on this repository and are not responsible for their content</disclaimer>
+		<disclaimer lang="en_NZ">Team Kodi did not make all the add-ons on this repository and are not responsible for their content</disclaimer>
+		<disclaimer lang="en_US">Team Kodi did not make all the add-ons on this repository and are not responsible for their content</disclaimer>
+		<disclaimer lang="es_AR">No todos los add-ons en este repositorio han sido creados por el equipo de Kodi y este no es responsable de su contenido</disclaimer>
+		<disclaimer lang="es_ES">El equipo de Kodi no ha hecho todos los Add-ons de este repositorio y no son responsables de su contenido</disclaimer>
+		<disclaimer lang="es_MX">El equipo de Kodi no hizo todos los add-ons en este repositorio y no es responsable de su contenido</disclaimer>
+		<disclaimer lang="et_EE">Kodi meeskond ei teinud kõiki lisasid selles hoidlas ja ei vastuta ka nende sisu eest.</disclaimer>
+		<disclaimer lang="eu_ES">Kodi taldeak ez ditu biltegi honetako gehigarri guztiak sortu eta ez da beren edukien erantzule.</disclaimer>
+		<disclaimer lang="fa_IR">همه افزونه های این منبع محصول کار تیم کودی نیستند و این تیم مسئولیتی در قبال محتوای آنها ندارد.</disclaimer>
+		<disclaimer lang="fi_FI">Team Kodi ei ole tehnyt kaikkia tässä ohjelmavarastossa olevia lisäosia, eikä siten ole vastuullinen kyseisten lisäosien sisällöstä</disclaimer>
+		<disclaimer lang="fr_CA">L’équipe Kodi n’a pas créé tous les addiciels de ce dépôt et n’est pas responsable de leur contenu</disclaimer>
+		<disclaimer lang="fr_FR">L’Équipe Kodi n’a pas créé toutes les extensions de ce dépôt et n’est pas responsable de leur contenu.</disclaimer>
+		<disclaimer lang="gl_ES">O equipo de Kodi non creou todos os Engadidos deste repositorio e non é responsábel do seu contido</disclaimer>
+		<disclaimer lang="he_IL">צוות הפיתוח של Kodi לא יצר את כל ההרחבות שבמאגר זה ואיננו אחראי על תוכנן</disclaimer>
+		<disclaimer lang="hr_HR">Kodi tim nije autor svih dodataka u ovom repozitoriju te kao takvi ne odgovaraju za njihov sadržaj</disclaimer>
+		<disclaimer lang="hu_HU">Nem minden itt található kiegészítőt az Kodi csapat készített és nem vállal felelősséget azok tartalmáért</disclaimer>
+		<disclaimer lang="id_ID">Tim Kodi tidak membuat semua pengaya pada repository ini dan tidak bertanggung jawab atas isinya.</disclaimer>
+		<disclaimer lang="is_IS">Kodi-teymið framleiðir ekki allar þessar viðbætur og er ekki ábyrgt fyrir innihaldi þeirra.</disclaimer>
+		<disclaimer lang="it_IT">Il team di Kodi non ha creato tutti gli add-on di questa libreria e non è responsabile per il loro contenuto</disclaimer>
+		<disclaimer lang="ja_JP">Kodi チームが、このリポジトリ上の全アドオンを作ったわけではありません。また、その内容についても責任は負いかねます。</disclaimer>
+		<disclaimer lang="ko_KR">Team Kodi가 이 저장소의 모든 애드온을 제작한 것은 아니며, 애드온 컨텐츠에 대한 책임이 없습니다.</disclaimer>
+		<disclaimer lang="lt_LT">Kodi komanda netestavo priedų šioje saugykloje ir neatsako arba nėra atsakinga už jų turinį</disclaimer>
+		<disclaimer lang="lv_LV">Kodi komanda nav izveidojusi visus šīs krātuves pielikumus un nav atbildīga par to saturu</disclaimer>
+		<disclaimer lang="mk_MK">Kodi тимот ги нема направено сите овие додатоци и не е одговорен за нивната содржина</disclaimer>
+		<disclaimer lang="ms_MY">Team Kodi tidak menghasilkan semua tambahan di dalam repositori ini dan tidak bertanggungjawab keatas kandungannya</disclaimer>
+		<disclaimer lang="mt_MT">Team Kodi m'għamilx l-add-ons kollha li hawn f'dan ir-repożitorju u mhumiex responsabbli għall-kontenut tagħhom</disclaimer>
+		<disclaimer lang="nb_NO">Team Kodi har ikke utviklet alle utvidelsene i denne pakkebrønnen og er ikke ansvarlig for deres innhold</disclaimer>
+		<disclaimer lang="nl_NL">Team Kodi heeft niet alle add-ons in deze depot geschreven en is niet verantwoordelijk voor hun inhoud.</disclaimer>
+		<disclaimer lang="pl_PL">Zespół Kodi nie tworzy wszystkich dodatków i nie bierze odpowiedzialności za ich zawartość</disclaimer>
+		<disclaimer lang="pt_BR">O Time do Kodi não produziu todos os add-ons deste repositório, e portanto não é responsável ​​por seu conteúdo</disclaimer>
+		<disclaimer lang="pt_PT">A Team Kodi não desenvolveu todos os add-ons neste repositório, e não é responsável pelo seu conteúdo.</disclaimer>
+		<disclaimer lang="ro_RO">Echipa Kodi nu a creat toate aceste suplimente din acest depozit și nu este responsabilă pentru conținutul lor.</disclaimer>
+		<disclaimer lang="ru_RU">Разработчики Kodi не являются авторами всех дополнений в данном репозитории и не несут ответственность за их содержимое.</disclaimer>
+		<disclaimer lang="sk_SK">Tým Kodi nevytvoril všetky doplnky v tomto zdroji nie je zodpovedný za ich obsah</disclaimer>
+		<disclaimer lang="sl_SI">Ekipa Kodi ni naredila vseh dodatkov v tem skladišču in ne odgovarja za njihovo vsebino</disclaimer>
+		<disclaimer lang="sr_RS">Тим Kodi није направио све додатке у овом спремишту и није одговоран за њихов садржај</disclaimer>
+		<disclaimer lang="sr_RS@latin">Tim-Kodi nije napravio sve dodatne programe u ovom spremištu i nije odgovoran za njihov sadržaj</disclaimer>
+		<disclaimer lang="sv_SE">Team Kodi har inte gjort alla tillägg i förrådet och är inte ansvariga för innehållet i dessa.</disclaimer>
+		<disclaimer lang="szl">Ekipa Kodi niy rychtuje wszyjskich przidŏwkōw i niy ôdpadŏ za jejich zawartość</disclaimer>
+		<disclaimer lang="tg_TJ">Гурӯҳи кории Kodi дар ин анбори нармафзор соҳиби ҳамаи барномаҳои иловагӣ намебошад ва барои мӯҳтавояшон ҷавобгар намебшад</disclaimer>
+		<disclaimer lang="th_TH">ทีม Kodi ไม่ได้จัดทำ ส่วนเสริม ทั้งหมดในแหล่งข้อมูลโปรแกรมนี้ และจะไม่รับผิดชอบต่อเนื้อหาเหล่านั้น</disclaimer>
+		<disclaimer lang="tr_TR">Kodi takımı bu depodaki tüm eklentileri geliştirmemiştir ve bunların içeriklerinden sorumlu değildir.</disclaimer>
+		<disclaimer lang="uk_UA">Зауважте, що не всі додатки в цьому Репозиторії створені Командою Kodi, і тому Команда не несе відповідальності за їх вміст.</disclaimer>
+		<disclaimer lang="vi_VN">Đội ngũ Kodi không làm ra tất cả các add-on có trên kho chứa này và sẽ không chịu trách nhiệm về nội dung của các add-on đấy</disclaimer>
+		<disclaimer lang="zh_CN">本库中插件不完全由 Kodi 团队开发，Kodi 团队对他人提交的内容不承担责任</disclaimer>
+		<disclaimer lang="zh_TW">這個附加元件庫的附加元件並非全部由 Kodi 團隊製作的，所以我們不對這些內容負責。</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.httplib2" name="httplib2" provider-name=" Joe Gregorio" version="0.8.0">
   <requires>
     <import addon="xbmc.python" version="2.1.0" />
-	<import addon="script.module.beautifulsoup4" version="4.4.1.1"/>
-	<import addon="plugin.video.youtube" version="5.3.7"/>
   </requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
+  <extension library="lib" point="xbmc.python.module" />
   <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Netzdivision</summary>
-    <description>https://www.youtube.com/user/Kev93LP/undefined :
-https://www.facebook.com/netzdivision.netzdivision
-    </description>
-  </extension>
-</addon>
-
-    <addon id="repository.diggz" name="Diggz Repository" version="4.0" provider-name="Diggz">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="Diggz Repository">
-            <info compressed="false">http://grumpeh.hemera.feralhosting.com/repo/_repo/addons.xml</info>
-            <checksum>http://grumpeh.hemera.feralhosting.com/repo/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://grumpeh.hemera.feralhosting.com/repo/_repo/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Diggz Repo</summary>
-            <description>Diggz Repo</description>
-            <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.gamestarter" name="Gamestarter add-on repository" version="3.0.0" provider-name="Bite Your Idols!">
-    <extension point="xbmc.addon.repository" name="Gamestarter add-on repository">
-        <info compressed="true">https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml</info>
-        <checksum>https://github.com/bite-your-idols/Gamestarter/raw/master/repository.gamestarter/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/bite-your-idols/Gamestarter/master/repository.gamestarter/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Gamestarter add-on repository</summary>
-		<description lang="en">Gamestarter add-on repository</description>
+        <description lan="en">httplib2 module</description>
+        <summary lang="en">httplib2 module</summary>
+        <disclaimer lang="en">Visit https://pypi.python.org/pypi/httplib2</disclaimer>
+        <license>MIT</license>
         <platform>all</platform>
-    </extension>
+        <email></email>
+        <website>https://pypi.python.org/pypi/httplib2</website>
+        <forum></forum>
+        <source>https://pypi.python.org/pypi/httplib2</source>
+        <language></language>
+   </extension>
 </addon>
 
-<addon
-  id="repository.jokerzbox_libreelec_s905"
-  name="JoKeRzBoX's LibreELEC extras S905"
-  version="1.0.0"
-  provider-name="JoKeRzBoX">
-	<extension point="xbmc.addon.repository"
-             name="JoKeRzBoX's LibreELEC extras S905">
-    <info compressed="false">http://raw.github.com/JoKeRzBoX/JoKeRzBoX_LibreELEC_Repo_S905/master/addons.xml</info>
-    <checksum>http://raw.github.com/JoKeRzBoX/JoKeRzBoX_LibreELEC_Repo_S905/master/addons.xml.md5</checksum>
-    <datadir zip="true">http://raw.github.com/JoKeRzBoX/JoKeRzBoX_LibreELEC_Repo_S905/master/zips</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>JoKeRzBoX's LibreELEC compilations for S905 based devices</summary>
-		<description>Thie repository contains addons compiled / ported to devices based on Amlogic S905 AARCH64 devices running LibreELEC (may also work with OpenELEC). There is no guarantee these addons will work so USE AT YOUR OWN RISK</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon
-  id="resource.language.de_de"
-  version="9.0.21"
-  name="German"
-  provider-name="Team Kodi">
+<addon id="script.xbmcbackup"
+    name="Backup" version="1.0.6" provider-name="robweber">
   <requires>
-    <import addon="kodi.resource" version="1.0.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.httplib2" version="0.8.0" />
+    <import addon="script.module.oauth2client" version="1.4.7" />
+    <import addon="script.module.uritemplate" version="0.6" />
+    <import addon="script.module.yaml" version="3.11"/>
+    <import addon="script.module.googleapi" version="1.4.0" />
   </requires>
-  <extension
-    point="kodi.resource.language"
-    locale="de_DE">
-    <charsets>
-      <gui unicodefont="false">CP1252</gui>
-      <subtitle>CP1252</subtitle>
-    </charsets>
-    <sorttokens>
-      <token>The</token>
-      <token>Der</token>
-      <token>Die</token>
-      <token>Das</token>
-    </sorttokens>
+  <extension point="xbmc.python.script" library="default.py">
+     <provides>executable</provides>
   </extension>
-  <extension point="kodi.addon.metadata">
-    <summary lang="en">German language pack</summary>
-    <description lang="en">German version of all texts used in Kodi.</description>
-    <platform>all</platform>
-    <assets>
-      <icon>icon.png</icon>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.kodi.loguploader" name="Kodi Logfile Uploader" version="0.5.0" provider-name="Team Kodi">
-	<requires>
-		<import addon="xbmc.python" version="2.24.0"/>
-		<import addon="script.module.kodi-six" version="0.0.4"/>
-		<import addon="script.module.pyqrcode" version="0.0.2"/>
-		<import addon="script.module.requests" version="2.15.1"/>
-	</requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Uploads your kodi.log file.</summary>
-		<description lang="en_GB">Uploads your kodi.log file and returns an url you can post on http://forum.kodi.tv/</description>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=288153</forum>
-		<website>https://kodi.tv/</website>
-		<source>https://github.com/XBMC-Addons/script.kodi.loguploader</source>
-	</extension>
-</addon>
-
-<addon id="service.libreelec.settings"
-       name="@DISTRONAME@ Configuration"
-       version="@ADDONVERSION@"
-       provider-name="libreelec.tv">
-   <requires>
-   	<import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py"></extension>
-  <extension point="xbmc.service"       library="service.py" start="startup"></extension>
+  <extension point="xbmc.service" library="scheduler.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="af">@DISTRONAME@ Konfigurasie</summary>
-    <summary lang="bg">Настройки на @DISTRONAME@</summary>
-    <summary lang="ca">Configuració de @DISTRONAME@</summary>
-    <summary lang="cs">@DISTRONAME@ Nastavení</summary>
-    <summary lang="da">@DISTRONAME@ konfiguration</summary>
-    <summary lang="de">@DISTRONAME@-Konfiguration</summary>
-    <summary lang="el">Διαμόρφωση του @DISTRONAME@</summary>
-    <summary lang="en">@DISTRONAME@ Configuration</summary>
-    <summary lang="en_AU">@DISTRONAME@ Configuration</summary>
-    <summary lang="en_NZ">@DISTRONAME@ Configuration</summary>
-    <summary lang="en_US">@DISTRONAME@ Configuration</summary>
-    <summary lang="es">Configuración de @DISTRONAME@</summary>
-    <summary lang="es_MX">Configuración de @DISTRONAME@</summary>
-    <summary lang="et">@DISTRONAME@ Seadistus</summary>
-    <summary lang="fi">@DISTRONAME@-asetukset</summary>
-    <summary lang="fr">Configuration @DISTRONAME@</summary>
-    <summary lang="fr_CA">Configuration d'@DISTRONAME@</summary>
-    <summary lang="gl">Configuración do @DISTRONAME@</summary>
-    <summary lang="he">הגדרות @DISTRONAME@</summary>
-    <summary lang="hr">@DISTRONAME@ podešavanje</summary>
-    <summary lang="hu">@DISTRONAME@ konfiguráció</summary>
-    <summary lang="it">Impostazioni @DISTRONAME@</summary>
-    <summary lang="ja">@DISTRONAME@設定</summary>
-    <summary lang="ko">@DISTRONAME@ 설정</summary>
-    <summary lang="lt">@DISTRONAME@ konfigūravimas</summary>
-    <summary lang="nl">@DISTRONAME@ Configuratie</summary>
-    <summary lang="no">@DISTRONAME@-konfigurasjon</summary>
-    <summary lang="pl">Konfiguracja @DISTRONAME@</summary>
-    <summary lang="pt">Configuração @DISTRONAME@</summary>
-    <summary lang="pt_BR">Configuração do @DISTRONAME@</summary>
-    <summary lang="ro">Configurare @DISTRONAME@ </summary>
-    <summary lang="ru">Конфигурация @DISTRONAME@</summary>
-    <summary lang="sk">Konfigurácia @DISTRONAME@</summary>
-    <summary lang="sl">Prilagoditev @DISTRONAME@</summary>
-    <summary lang="sv">@DISTRONAME@-konfiguration</summary>
-    <summary lang="tr">@DISTRONAME@ Yapılandırması</summary>
-    <summary lang="vi">@DISTRONAME@ Cấu hình</summary>
-    <summary lang="zh">@DISTRONAME@ 设置</summary>
-    <description lang="bg">Ползвайте добавката за да управлявате операционната система, в основата на @DISTRONAME@. Чрез добавката можете да настроите всичко и така не се налага да се притеснявате какво работи под Kodi.[CR][CR]От добавката можете да променяте настройките на мрежовите връзки, клавиатурната подредба и да включвате/изключвате отдалечения достъп посредством Samba или SSH.</description>
-    <description lang="ca">Utilitza aquest complement per configurar el sistema operatiu subjacent del sistema @DISTRONAME@. Des d'aquí es pot gestionar tot el sistema, de manera que no s'ha de preocupar sobre el que s'executa sota el Kodi.[CR][CR]Des d'aquí es pot canviar la connectivitat de la xarxa, la distribució del teclat i idioma i activar / desactivar l'accés remot inclòs samba i SSH.</description>
-    <description lang="cs">Použijte toto rozšíření pro správu vašeho @DISTRONAME@ systému. Odtud můžete spravovat celý systém, takže nemusíte mít strach o to, co běží pod kapotou. [CR] [CR] Odtud můžete změnit připojení k síti, rozložení klávesnice, jazyk a povolit nebo zakázat vzdálený přístup, včetně Samby a SSH.</description>
-    <description lang="da">Brug denne addon til at styre dit @DISTRONAME@ systems underliggende operativsystem. Herfra kan du styre hele systemet, så du ikke behøver at bekymre dig om, hvad der kører under motorhjelmen. [CR] [CR] Herfra kan du ændre din netværksforbindelse, dit tastaturlayout og sprog og aktivere/deaktivere fjernadgang, herunder Samba og SSH.</description>
-    <description lang="de">Verwenden Sie dieses Addon, um das Betriebssystem, auf dem @DISTRONAME@ läuft, zu administrieren. Von hier aus können Sie das gesamte System verwalten ohne sich Gedanken machen zu müssen, was genau im System abläuft.[CR][CR]Hier haben Sie die Möglichkeit Netzwerkeinstellungen, Tastaturlayouts oder Systemdienste, wie SSH oder Samba, zu konfigurieren.</description>
-    <description lang="el">Χρησιμοποιήστε αυτό το πρόσθετο για να διαχειριστείτε το λειτουργικό σύστημα @DISTRONAME@. Από εδώ μπορείτε να διαχειριστείτε ολόκληρο το σύστημα ούτως ώστε να μη χρειάζεται να ανησυχείτε σχετικά με το τι τρέχει στο υπόβαθρο.[CR][CR]Μπορείτε, επίσης, να αλλάξετε τη συνδεσιμότητα του δικτύου σας, τη διάταξη του πληκτρολογίου σας και τη γλώσσα, καθώς και να ενεργοποιήσετε/απενεργοποιήσετε την απομακρυσμένη πρόσβαση μέσω Samba και SSH.</description>
-    <description lang="en">Use this addon to manage your @DISTRONAME@ system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="en_AU">Use this addon to manage your @DISTRONAME@ system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="en_NZ">Use this addon to manage your @DISTRONAME@ system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="en_US">Use this addon to manage your @DISTRONAME@ system's underlying operating system. From here you can manage the entire system so you don't have to worry about what runs under the hood.[CR][CR]From here you can change your network connectivity, your keyboard layout and language and enable/disable remote access including Samba and SSH.</description>
-    <description lang="es">Usa este add-on para administrar el sistema @DISTRONAME@. Desde aquí podrás controlar el sistema al completo (Conexiones de red, teclado, acceso remoto, samba y SSH)</description>
-    <description lang="es_AR">Usá esta extensión para administrar el sistema operativo subyacente a tu sistema @DISTRONAME@. Desde acá podés administrar el sistema en su totalidad sin tener que preocuparte por lo que pasa debajo del capó.[CR][CR]Desde acá podés cambiar la conexión de red, la distribución del teclado y el lenguaje y habilitar/deshabilitar el acceso remoto, incluyendo Samba y SSH.</description>
-    <description lang="es_MX">Usa este complemento para configurar el sistema operativo de tu @DISTRONAME@. Desde aquí puedes administrar todo el sistema fácilmente.[CR][CR]Desde aquí puedes cambiar la configuración de red, distribución del teclado, lenguaje del sistema y configurar Samba y SSH para controlar el acceso remoto al sistema.</description>
-    <description lang="et">See  lisa on @DISTRONAME@ operatsioonisüsteemi häälestamiseks. Siit saad hallata kogu süsteemi, ilma et oleks vaja kaane alla piiluda.[CR][CR] Siit saab seada võrguühenduse parameetreid, klaviatuuripaigutust, keelt ning lubada/keelata kaugligipääsu, sealhulgas Samba ja SSH.</description>
-    <description lang="fi">Käytä tätä lisäosaa muokataksesi @DISTRONAME@in alla olevaa käyttöjärjestelmää. Täältä voit muokata koko järjestelmää välittämättä siitä, mitä konepellin alta löytyy.[CR][CR]Voit muokata verkkoasetuksia, näppäimistön tyyppiä, kieliasetuksia sekä yhteysasetuksia, mukaanlukien Samba ja SSH.</description>
-    <description lang="fr">Utiliser cette extension pour configurer le système d'exploitation @DISTRONAME@. Il est possible de gérer l'intégralité du système simplement sans se soucier des détails techniques.[CR][CR]Il est possible de modifier la connexion au réseau, la disposition du clavier ou la langue du système. Il est aussi possible d'activer les accès distants comme Samba ou SSH.</description>
-    <description lang="fr_CA">Utilisez cet addiciel pour gérer le système d'exploitation sous-jacent de votre système @DISTRONAME@. D'ici vous pouvez gérer votre système au complet sans vous soucier de ce qui tourne sous la capot.[CR][CR]D'ici vous pouvez changer vos paramètres de connexion réseau, l'agencement et la langue de votre clavier et activer/désactiver l'accès distant incluant Samba et SSH.</description>
-    <description lang="he">בעזרת הרחבה זו ניתן לנהל את מערכת ההפעלה של @DISTRONAME@. מכאן ניתן לנהל כל אחד ממאפייני המערכת כך שאין צורך לדאוג מה קורה מתחת לממשק המשתמש.[CR][CR]ניתן לשנות הגדרות רשת, מערך מקלדת ושפה וגם להפעיל/לנטרל שירותי גישה מרחוק כולל Samba ו-SSH.</description>
-    <description lang="hr">Koristite ovaj dodatak za upravljanje @DISTRONAME@ operativnim sustavom. Odavdje možete upravljati cijelim sustavom stoga se ne morate brinuti što je pokrenuto u pozadini.[CR][CR]Odavdje možete promijeniti mrežno povezivenje, vaš raspored tipkovnice i jezik, omogućiti/onemogućiti udaljeni pristup uključujući Sambu i SSH.</description>
-    <description lang="hu">Ez a kiegészítő vezérli az @DISTRONAME@ rendszer alatti operációs rendszer beállításait. Innen kezelheti a teljes rendszert, tehát nem szükséges aggódnia mi van a motorháztető alatt. [CR][CR] Innen állíthatóak be a hálózati kapcsolatok, billentyűzet kiosztás és nyelvezet valamint a távoli hozzáférések engedélyezése/letiltása beleértve a Samba-t és SSH-t is.</description>
-    <description lang="it">Usa questo addon per gestire le impostazioni del sistema operativo di @DISTRONAME@. Da qui puoi gestire l'intero sistema senza necessità di una conoscenza avanzata del software sottostante.[CR][CR]Puoi modificare le connessioni di rete, il layout e la lingua della tastiera così come abilitare/disabilitare l'accesso remoto tramite Samba e SSH</description>
-    <description lang="ja">このアドオンで@DISTRONAME@システムのオペレーティング・システムを管理します。ここからシステム全体を管理できますので、バックグラウンドで何が動作しているかなどを気にしなくてかまいません。[CR][CR]ネットワーク接続、キーボードのレイアウトや言語、SambaとSSHを含むリモートアクセスの有効・無効などの設定を行います。</description>
-    <description lang="lt">Naudokite šį priedą operacines sistemos, kuris pagrįsta jūsų @DISTRONAME@ sistema, tvarkymui. Čia jūs galite valdyta visą sistemą, kad jums netektų rūpintis kas vyksta po gaubtu..[CR][CR]Čia galite pakeisti tinklo nustatymus, klaviatūros išdėstymą ir kalbą bei įjungti/išjungti nuotolinę prieigą, įskaitant Samba ir SSH.</description>
-    <description lang="nl">Gebruik deze addon om het onderliggende @DISTRONAME@ systeem in te stellen. Vanaf hier kunt u het gehele systeem aanpassen, zodat u zich geen zorgen hoeft te maken over wat er onderhuids gebeurt.[CR][CR]Vanaf hier kunt u de netwerkverbindingen aanpassen, uw toetsenbord indeling en -taal, alsook een externe verbinding inclusief Samba en SSH in- of uitschakelen.</description>
-    <description lang="no">Bruk dette tillegget for å konfigurere @DISTRONAME@s underliggende operativsystem. Herfra kan du konfigurere hele systemet slik at du ikke trenger å bekymre deg om hva som skjer under panseret.[CR][CR]Du kan endre nettverksinnstillinger, tastatur, språk og aktivere eller deaktivere nettverkstilgang slik som Samba og SSH.</description>
-    <description lang="pl">Za pomocą tej wtyczki możesz zarządzać systemem @DISTRONAME@. Z tego miejsca masz kontrolę nad całym systemem.[CR][CR] Zarządzasz połączeniem sieciowym, układem klawiatury i językiem systemu oraz możesz włączyć lub wyłączyć dostęp zdalny, w tym Sambę i SSH.</description>
-    <description lang="pt">Utilize este addon para gerir o sistema operativo que está na base do @DISTRONAME@. Aqui pode gerir todo o sistema, para não ter de se preocupar com aquilo que se passa nos bastidores.[CR][CR] Daqui, pode alterar as suas ligações de rede, disposição do teclado e idiomas. Também pode activar/desactivar acesso remoto, incluindo Samba e SSH.</description>
-    <description lang="pt_BR">Utilize este addon para gerenciar o sistema operacional do @DISTRONAME@. Aqui você pode gerenciar todo o sistema, para não ter de se preocupar com aquilo que se passa nos bastidores.[CR][CR] Daqui, você pode alterar as suas conexões de rede, configurações do teclado e idiomas. Também pode ativar/desativar acesso remoto, incluindo compartilhamento de rede do Windows e SSH.</description>
-    <description lang="ru">Данное дополнение предназначено для управления системными настройками @DISTRONAME@. С помощью удобного интерфейса Вы можете управлять настройками системы (включая низкоуровневые настройки ОС) через удобный интерфейс.[CR][CR]Здесь Вы также сможете изменить способ соединения с сетью, настроить раскладку клавиатуры, выбрать язык интерфейса, а также включить удаленный доступ по SSH и/или Samba.</description>
-    <description lang="sk">Tento doplnok slúži na správu operačného systému, na ktorom beží @DISTRONAME@. Odtiaľto je možné spravovať celý systém bez nutnosti znalostí o tom, čo beží pod kapotou.[CR][CR]Je tu možné meniť sieťové nastavenia, rozloženie a jazyk klávesnice alebo povoliť/zakázať vzdialený prístup prostredníctvom Samby a SSH.</description>
-    <description lang="sl">S tem dodatkom upravljate operacijski sistem, ki deluje pod pokrovom sistema @DISTRONAME@. Odtod lahko upravljate s celotnim sistemom, tako da je skrb o tem, kar teče pod pokrovom, odveč.[CR][CR]Odtod lahko spremenite svojo omrežno povezljivost, postavitev tipkovnice in jezik ter omogočite/onemogočite oddaljeni dostop, vključno s Sambo in SSH.</description>
-    <description lang="sv">Använd detta tillägg för att hantera ditt @DISTRONAME@-systems underliggande operativ. Härifrån kan du hantera hela systemet så du inte behöver oroa dig för vad som körs under skalet.[CR][CR]Härifrån kan du ändra din nätverksanslutning, tangentbordslayout och språk, samt aktivera/inaktivera fjärråtkomst inklusive Samba och SSH.</description>
-    <description lang="tr">Bu eklentiyi kullanarak @DISTRONAME@ sisteminizin temelindeki işletim sistemini yönetin. Buradan tüm sistemi yönetebilirsiniz ve bu yüzden sistemin altında neler olduğu hakkında endişelenmenize gerek yok.[CR][CR]Buradan ağ bağlantısı, klavye düzeni ve dilini değiştirip, Samba ve SSH gibi uzaktan erişimi etkinleştirip/devre dışı bırakabilirsiniz.</description>
-    <description lang="vi">Sử dụng addon này để quản lý  hệ thống điều hành @DISTRONAME@ cơ bản của bạn.&#10;Từ đây bạn có thể quản lý toàn bộ hệ thống, do đó bạn không cần phải lo lắng về những gì đang chạy . [CR][CR] Từ đây bạn có thể thay đổi kết nối mạng của bạn, bố trí bàn phím của bạn và ngôn ngữ và cho phép / vô hiệu hóa truy cập từ xa bao gồm Samba và SSH.</description>
-    <description lang="zh">使用此插件管理你的 @DISTRONAME@ 系统的底层操作系统。它使你可以在无需深入了解的情况下管理整个系统。[CR][CR]在这里，你可以修改网络设置、键盘布局、语言以及启用/禁用 Samba 和 SSH 等远程访问功能。</description>
-    <platform>all</platform>
-    <assets>
-    <icon>resources/skins/Default/media/icon.png</icon>
-    <fanart>resources/skins/Default/media/fanart.png</fanart>
-    </assets>
-  </extension>
-</addon>
-
-<addon
-  id="service.rom.collection.browser"
-  version="1.0.1"
-  name="Rom Collection Browser Service"
-  provider-name="carabalb, jimyx17, malte">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.service" library="default.py" start="login"></extension>
-  <extension point="xbmc.addon.metadata">
+    <summary lang="ar">إنسخ إحتياطياً قاعده بيانات إكس بى إم سى وملفات اﻹعدادات فى حاله وقوع إنهيار مع إمكانيه اﻹسترجاع</summary>
+    <summary lang="be">Backup and restore your XBMC database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="bg">Добавката може да създава резервно копие на XBMC и възстановява (след това) Вашата база от данни и настройки, в случай на необходимост.</summary>
+    <summary lang="ca">Feu còpies de seguretat i restaureu la vostra base de dades de l'XBMC i dels fitxers de configuració en el cas de fallada o corrupció dels fitxers.</summary>
+    <summary lang="cs">Zálohování a obnovení XBMC databáze a konfiguračních souborů v případě chyby nebo poškození souborů.</summary>
+    <summary lang="da">Sikkerhedskopiér og genskab din XBMC database og konfigurationsfiler i tilfælde af et nedbrud eller en ødelagt fil.</summary>
+    <summary lang="de">Die XBMC Datenbank sichern und bei Dateiverlust oder Beschädigung wiederherstellen.</summary>
+    <summary lang="el">Δημιουργήστε αντίγραφα ασφαλείας της βάσης δεδομένων και των ρυθμίσεων του XBMC για την πιθανότητα σφαλμάτων ή καταστροφής αρχείων.</summary>
+    <summary lang="en">Backup and restore your Kodi database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="en_NZ">Backup and restore your XBMC database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="en_US">Backup and restore your XBMC database and configuration files in the event of a crash or file corruption.</summary>
+    <summary lang="es">Haz copia de seguridad de tu base de datos y configuración y recupera todo en caso de fallo.</summary>
+    <summary lang="es_MX">Respalda y restaura tu base de datos y archivos de configuración de XBMC dado el evento de un cuelgue o corrupción de archivos. </summary>
+    <summary lang="eu">XBMC datu-basea eta konfigurazio fitxategien babes-kopia egin kraskatze edo fitxategi hondamena saihesteko</summary>
+    <summary lang="fr">Sauvegarder et restaurer vos bases de données XBMC et vos fichiers de configuration en cas de crash ou de fichiers corrompus.</summary>
+    <summary lang="fr_CA">Sauvegarder et restaurer votre base de données et vos fichiers de configuration XBMC dans le cas d'un plantage ou d'une corruption de fichier.</summary>
+    <summary lang="gl">Crear copia de seguranza e restaurar a base de datos e ficheiros de configuración de XBMC no caso dun fallo ou corrupción de ficheiros.</summary>
+    <summary lang="he">גיבוי ושחזור מסד הנתונים וקבצי ההגדרות של XBMC במקרה של קריסה או קבצים פגומים.</summary>
+    <summary lang="hr">Sigurnosno kopirajte i obnovite vašu XBMC bazu podataka i datoteke podešavanja prilikom rušenja ili oštećenja datoteka.</summary>
+    <summary lang="hu">Biztonsági mentés készítése az XBMC adatbázisról és a beállítófájlokról vagy állítsa helyre azokat egy rendszerösszeomlás vagy adatvesztés után.</summary>
+    <summary lang="id">Cadangkan dan kembalikan basis data XBMC Anda beserta berkas konfigurasi apabila terjadi kerusakan atau korupsi berkas.</summary>
+    <summary lang="it">Effettua il backup o ripristina il tuo database di XBMC e i file di configurazione qualora si verifichi una chiusura imprevista o un danneggiamento dei file.</summary>
+    <summary lang="ja">システムのクラッシュやファイル破損に備えて、XBMC のデータベースや設定ファイルをバックアップ・リストアできます。</summary>
+    <summary lang="ko">XBMC 데이터베이스와 설정 파일을 백업하고 복구합니다.</summary>
+    <summary lang="lt">Atsarginė kopija katra atkuria jūsų XBMC duomenų bazę ir konfigūracijos failus avarijos ar failo sugadinimo metu.</summary>
+    <summary lang="nl">Back-up en herstel je XBMC database en configuratiebestanden in geval van een crash of bestandscorruptie.</summary>
+    <summary lang="no">Sikkerhetskopier og gjenopprett dine XBMC-databaser og -konfigurasjonsfiler i tilfelle et krasj eller filkorrupsjon.</summary>
+    <summary lang="pl">Stwórz kopię bezpieczeństwa oraz przywróć twoją bazę danych XBMC łącznie z plikami konfiguracyjnymi, w przypadku awarii lub uszkodzenia plików.</summary>
+    <summary lang="pt">Crie cópias de segurança da base de dados do XBMC e dos ficheiros de configuração. Pode restaurar o conteúdo se ocorrer um crash ou corrupção de ficheiros.</summary>
+    <summary lang="pt_BR">Faça backup e restaure o banco de dados do XBMC e seus arquivos de configuração, no caso de falha ou corrupção de arquivo.</summary>
+    <summary lang="ru">Сохраняйте и восстанавливайте базу данных и конфигурационные файлы XBMC, чтоб не допустить потерю данных в случае аварии или повреждений файлов.</summary>
+    <summary lang="sk">Zálohovanie a obnova XBMC databázy a konfiguračných súborov pre prípad havárie alebo poškodenia súboru.</summary>
+    <summary lang="sv">Ta backupp av eller återställ din XBMC-databas och konfigurationsfiler i händelse av en krash eller filkorruption.</summary>
+    <summary lang="zh">备份和恢复 XBMC 数据库和配置文件，以防范系统崩溃或文件损坏问题。</summary>
+    <description lang="ar">أسبق لك ان أضعت تخصيصاتك المفضله ورغبت لو كان بإمكانك نسخهم إحتياطياً ؟ اﻷن بات بإمكانك ذلك. يمكنك إستخراج قاعده بياناتك وقوائم التشغيل والملحقات وتخصيصاتك المفضله وغيره الى اى مصدر خارجى قابل للكتابه من قِبَل إكس بى إم سى او مباشرتاً الى نظام تخزين سحابى. يمكنك تفعيل النسخ اﻹحتياطى عند الحاجه او جدولته مُسبقاً</description>
+    <description lang="be">Ever hosed your XBMC configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by XBMC or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="bg">Някога да сте губили всички настройки, които сте правили по XBMC? А разполагахте ли с резервно копие? Е сега можете да създавате резервни копия само с едно кликване. Можете да изнасяте базата от данни, плейлистите, миниатюрите, добавките и други, на всяко място до което XBMC има права за писане или директно в Dropbox. Можете да настроите и автоматично създаване на копия през определен интервал от време.</description>
+    <description lang="ca">Alguna vegada s'ha carregat la seva configuració de l'XBMC i ha desitjat tenir una còpia de seguretat? Ara pot fer-ho amb un simple clic. Pot exportar la seva base de dades, llista de reproducció, miniatures, complements i altres detalls de la configuració a qualsevol font que pugui ser escrita per l'XBMC o directament a l'emmagatzematge en el núvol Dropbox. Les còpies de seguretat es poden executar sota demanda o per mitjà d'un planificador.</description>
+    <description lang="da">Har du prøvet at slette din XBMC opsætning, og ønsket at du havde haft sikkerhedskopi? Nu kan du få det med et enkelt klik. Du kan eksportere din database, afspilninglister, miniaturebilleder, addons og andre opsætningsdetaljer til enhver kilde, som er skrivbar for XBMC eller direkt til Dropbox cloud lager. Sikkerhedskopier kan køres manuelt eller via en tidsplan.</description>
+    <description lang="de">Jemals deine XBMC Konfiguration zerschossen und dir dann gewünscht, dass ein Backup existiert? Jetzt kannst du eine Sicherung mit nur einem Klick erzeugen. Du kannst deine Datenbanen, Playlisten, Thumbnails, Addons und andere Details zu einem Ort deiner Wahl sichern.</description>
+    <description lang="el">Σας έτυχε ποτέ να χάσετε τις ρυθμίσεις του XBMC και να εύχεστε να είχατε αντίγραφο ασφαλείας; Πλέον μπορείτε με ένα απλό κλικ. Μπορείτε να εξάγετε τη βάση δεδομένων, τις λίστες αναπαραγωγής, τις μικρογραφίες, τα πρόσθετα και άλλες λεπτομέρειες της εγκατάστασης σε οποιαδήποτε πηγή στην οποία μπορεί να γράψει το XBMC, ή απευθείας στο λογαριασμό σας στο Dropbox. Τα αντίγραφα μπορούν να γίνονται κατ' επιλογή ή μέσω προγραμματισμού.</description>
+    <description lang="en">Ever hosed your Kodi configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by XBMC or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="en_NZ">Ever hosed your XBMC configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by XBMC or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="en_US">Ever hosed your XBMC configuration and wished you'd had a backup? Now you can with one easy click. You can export your database, playlist, thumbnails, addons and other configuration details to any source writeable by Kodi or directly to Dropbox cloud storage. Backups can be run on demand or via a scheduler. </description>
+    <description lang="es">¿Alguna vez te has cargado la configuración de XBMC y habrías deseado tener una copia de seguridad? Ahora puedes tenerla con un único click. Exporta tus base de datos, listas de reproducción, miniaturas, addons y resto de configuraciones a cualquier fuente accesible por XBMC o a tu almacenamiento en Dropbox. Las copias de seguridad pueden programarse o realizarse bajo demanda.</description>
+    <description lang="es_MX">¿Alguna vez haz echado a perder tu configuración de XBMC y haz deseado tener un respaldo? Ahora puedes tenerlo con un simple click. Puedes exportar tu base de datos, listas de reproducción, miniaturas, addons y otros detalles de configuración correspondientes a cualquier fuente que pueda escribir XBMC. Los respaldos pueden ser efectuados a pedido o mediante una programación temporal</description>
+    <description lang="fr">Avez-vous déjà perdu votre configuration XBMC et espéré avoir fait une sauvegarde ? Maintenant, vous pouvez le faire en un simple click. Vous pouvez exporter vos bases de données, playlists, miniatures, addons et autres fichiers de configuration vers n'importe quel endroit accessible depuis XBMC.</description>
+    <description lang="fr_CA">Avez-vous déjà ruiné votre configuration XBMC et souhaité avoir une sauvegarde? Vous le pouvez maintenant en un seul clic. Vous pouvez exporter vos base de données, liste de lecture, imagettes, addiciels et autres détails de configurations vers n'importe quelle source inscriptible depuis XBMC ou directement vers le stockage en nuage Dropbox. Les sauvegardes peuvent être exécutées sur demande ou à l'aide d'un ordonnanceur.</description>
+    <description lang="gl">De seguro que algunha vez eliminou a configuración do XBMC e desexou ter unha copia de seguranza?. Agora pode cun só clic. Pode exportar a súa base de datos, listaxes de reprodución, miniaturas, complementos e outros detalles da configuración a calquera medio escribíbel ou directamente ao Dropbox. As copias de seguranza pódense executar baixo demanda ou programadas.</description>
+    <description lang="he">האם אי פעם נפגמו הגדרות XBMC וייחלת שהיה לך גיבוי ? כעת אתה יכול ליצור כזה בלחיצת כפתור קלילה. ניתן לייצא את בסיס הנתונים, רשימות ההשמעה, התמונות הממוזערות, הרחבות והגדרות נוספות לכל יעד שיש ל-XBMC הרשאת כתיבה לו או ישירות לשירות אחסון הענן דרופבוקס. ניתן לתזמן מראש גיבויים או להריצם ידנית.</description>
+    <description lang="hr">Jeste li ikada oštetili vaša XBMC podešavanja i poželjeli ste ih obnoviti iz sigurnosne kopije? Sada to možete jednim klikom. Možete izvesti vašu bazu podataka, popis izvođenja, minijature, dodatke i ostale pojedinosti podešavanja na svaki izvor dostupan XBMC-u ili izravno na Dropbox oblak pohrane. Sigurnosno kopiranje se može pokrenuti na zahtjev ili u planiranom vremenu.</description>
+    <description lang="hu">Sikerült már összekutyulni az XBMC beállításait és jó lett volna egy biztonsági mentés? Most megteheti egy kattintással. Exportálhatja az adatbázisait, lejátszáslistáit, könyvjelzőit, kiegészítőit és egyéb beállításokat bármely, az XBMC által írható tárhelyre vagy közvetlenül a Dropbox felhő tárolóba. A mentések kézzel vagy időzítetten indíthatóak.</description>
+    <description lang="id">Pernah membuat berantakan konfigurasi XBMC Anda dan berharap Anda punya cadangannya? Sekarang Anda dapat melakukannya dengan klik mudah. Anda dapat mengekspor basis data, daftar putar, gambar kecil, addon dan rincian konfigurasi lainnya ke sumber mana saja yang dapat ditulis oleh XBMC atau langsung ke penyimpanan awan Dropbox. Pencadangan dapat dijalankan sesuai permintaan atau terjadwal.</description>
+    <description lang="it">Hai mai distrutto la tua configurazione di XBMC ma non ne avevi una copia di backup? Ora puoi farlo con un semplice click. Puoi esportare il tuo database, le playlist, le anteprime, gli add-on ed altre configurazioni su ogni percorso accessibile da XBMC o direttamente su Dropbox. I backup si possono fare a richiesta o possono essere pianificati.</description>
+    <description lang="ja">XBMCの設定が消えてしまい、バックアップをとっておけば... と思ったことはありますか？これからは1クリックで簡単にバックアップできます。データベース、プレイリスト、サムネール、アドオン、その他設定項目を、XBMC が書き込み可能なメディアに書き出せます。Dropbox クラウドストレージにも直接書き出せます。スケジューラによる自動バックアップと、オンデマンドでのバックアップの両方が使えます。</description>
+    <description lang="ko">XBMC 설정 백업본이 있었으면 하고 원했던 적이 있습니까? 이제 한 번의 클릭으로 가능합니다. 데이터베이스, 재생목록, 썸네일, 애드온과 기타  세부 설정을 어디에나 내보내거나 직접 Dropbox 에  저장할 수 있습니다. 백업은 수동 또는 예약으로 실행할 수 있습니다.</description>
+    <description lang="lt">Kada naujinate ir konfiguruojate savo XBMC ar susimastėte, kad jums reikalinga atsarginė kopija? Dabar galite tai atlikti vienu spustelėjimu. Savo duomenų bazes, atkūrimą, miniatiūras, priedus ir kitas konfigūracijos failus galite eksportuoti iš bet kokio šaltinio. Atsarginė(-ės) kopija(-os) gali būti paleistos pareikalavus arba per tvarkaraštį.</description>
+    <description lang="nl">Ooit je XBMC configuratie verknalt en gewenst dat je een backup had? Nu kan dat met een simpele klik. Je kunt je bibliotheek, afspeellijsten, miniaturen, addons en andere configuratie optes exporteren naar elke bron die door XBMC beschrijfbaar is of direct naar een Dropbox cloud opslag. Backups kunnen op verzoek of via een rooster gedraaid worden.</description>
+    <description lang="no">Har du noen gang ødelagt XBMC-installasjonen din og ønsket at du hadde en sikkerhetskopi? Det kan du nå med et enkelt trykk. Du kan eksportere din database, spillelister, miniatyrer, utvidelser og andre konfigurasjonsdetaljer til enhver kilde som er tilgjengelig for XBMC eller til Dropbox. Du kan lage sikkerhetskopier ved behov eller med en timeplan.</description>
+    <description lang="pl">Straciłeś kiedyś swoją konfigurację XBMC i marzyłeś o kopii zapasowej? Teraz już możesz i to w prosty sposób. Możesz eksportować swoją bazę, listy odtwarzania, miniatury, wtyczki oraz wiele więcej do dowolnego źródła bezpośrednio z XBMC. Kopia bezpieczeństwa może być uruchomiona na żądanie lub wg harmonogramu.</description>
+    <description lang="pt">Já arruinou a sua configuração do XBMC e desejou ter feito uma cópia de segurança? Agora pode, com apenas um clique. Exporte a base de dados, listas de reprodução, miniaturas, add-ons e outras configurações para qualquer fonte acedível pelo XBMC. As cópias de segurança podem ser executadas manualmente ou por temporizador.</description>
+    <description lang="pt_BR">Sempre se preocupou com sua configuração do XBMC e desejou ter um backup? Agora você pode com um simples clique. Você pode exportar seu banco de dados, listas de reprodução, miniaturas, addons e outros detalhes de configuração para qualquer fonte gravável pelo XBMC ou diretamente ao armazenamento na nuvem Dropbox. Os backups podem ser executados sob demanda ou por agendamento.</description>
+    <description lang="ru">Хотите получить резервную копию настроек XBMC? Теперь можете это сделать одним щелчком мыши. Вы можете выгрузить вашу базу данных, плейлисты, эскизы, дополнения и другую нужную Вам информацию и сохранить её с помощью XBMC или выгрузить в облачное хранилище Dropbox. Резервную копию можно сделать по требованию или запускать по расписанию.</description>
+    <description lang="sk">Už ste niekedy poškodili konfiguráciu XBMC a priali si mať zálohu? Teraz môžete - na jeden klik. Môžete exportovať Vašu databázu, playlist, náhľady, doplnky a konfigurácie na ktorýkoľvek zdroj zapisovateľný XBMC. Zálohy môžu byť púšťané na požiadanie alebo plánovačom. </description>
+    <description lang="sv">Har du någonsin tappat bort din XBMC konfiguration och önskat att du hade en backup? Nu kan du enkelt med ett klick. Du kan exportera din databas, spellista, minityrer, tillägg och andra konfigurationsdetaljer till valfri källa som är skrivbar för XBMC. Backupper kan köras på begäran eller via scheman.</description>
+    <description lang="zh">你是否经常折腾你的 XBMC，因而希望能够有个备份？你可以把资料库、播放列表、缩略图、插件和其他配置细节导出到 XBMC 可以写入的任意位置。备份可以按需运行或通过计划任务执行。</description>
     <language></language>
-    <summary>Performs Rom Collection Browser startup tasks</summary>
-    <description>Some features in Rom Collection Browser require actions on XBMC startup: starting RCB after launching emulators in solo mode and scraping games on XBMC startup.</description>
-    <license>GPL 2.0</license>
-    <platform>android freebsd ios linux osx windows</platform>
-  </extension>
-</addon>
-
-	<addon id="skin.ace2" version="1.6.0" name="Ace 2" provider-name="MarcosQui">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Ace 2, improved, more light and more powerful than ever.</summary>
-		<summary lang="en_US">Ace 2, improved, more light and more powerful than ever.</summary>
-		<summary lang="pt_BR">Ace 2, melhorada, mais leve e mais poderosa do que nunca.</summary>
-		<description lang="en">The Ace reaches its second edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Ace 2 incorporates new features such as Flexible Widgets 3nd Generation which takes the main menu's level of customization to something never seen before.[CR]Ace 2, you've never seen a skin like this.</description>
-		<description lang="pt_BR">A Ace 2 chega a sua segunda edição.[CR]Reformulada, muito simples de usar, com um novo código que proporciona uma pele leve e poderosa.[CR]Ace 2 incorpora um novo recurso chamado Widgets Flexíveis de Terceira Geração que eleva o nível de customização como você nunca viu antes.[CR]Ace 2, você nunca viu uma skin assim.</description>
-		<disclaimer lang="en_GB">Ace 2, improved, more light and more powerful than ever.</disclaimer>
-		<disclaimer lang="en_US">Ace 2, improved, more light and more powerful than ever.</disclaimer>
-		<disclaimer lang="pt_BR">Ace 2, melhorada, mais leve e mais poderosa do que nunca.</disclaimer>
-		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>https://forum.kodi.tv/</forum>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-			<screenshot>resources/screenshot-04.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon
-  id="skin.aeon.nox.5.maniac"
-  version="5.6.0-1.12"
-  name="Aeon Nox 5 - Maniac"
-  provider-name="Maniac">
-	<requires>
-		<import addon="xbmc.gui" version="5.3.0"/>
-		<import addon="script.grab.fanart" version="0.14.1"/>
-		<import addon="script.skinshortcuts" version="0.4.5"/>
-		<import addon="service.library.data.provider" version="0.0.9"/>
-	</requires>
-	<extension
-	  point="xbmc.gui.skin"
-	  debugging="false"
-	  effectslowdown="0.75">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Aeon Nox 5: Maniac</summary>
-		<description lang="en">This skin is a fork of BigNoid's Aeon Nox 5: Redux for Kodi. Skin will be kept up-to-date with BigNoid's changes, with the addition of my LiveTV mod. There is also a White-theme included.</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-	<addon id="skin.aeonmq8" version="2.9.0" name="Aeon MQ 8" provider-name="MarcosQui">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Aeon MQ 8, improved, more light and more powerful than ever.</summary>
-		<summary lang="en_US">Aeon MQ 8, improved, more light and more powerful than ever.</summary>
-		<summary lang="pt_BR">Aeon MQ 8, melhorada, mais leve e mais poderosa do que nunca.</summary>
-		<description lang="en_GB">The traditional Aeon MQ reaches its eighth edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Aeon MQ 8 incorporates new features such as FLEXIBLE WIDGETS 2ND GENERATION which takes the main menu's level of customization to something never seen before.[CR]Aeon MQ 8, you've never seen a skin like this.</description>
-		<description lang="en_US">The traditional Aeon MQ reaches its eighth edition.[CR]Reformulated, very simple to use, with a new code that provides a lightweight and powerful skin.[CR]The Aeon MQ 8 incorporates new features such as FLEXIBLE WIDGETS 2ND GENERATION which takes the main menu's level of customization to something never seen before.[CR]Aeon MQ 8, you've never seen a skin like this.</description>
-		<description lang="pt_BR">A tradicional Aeon MQ chega a sua oitava edição.[CR]Aeon MQ 8 conta com todos os recursos presentes na versão anterior, no entanto, esses recursos foram otimizados afim de proporcionar uma experiência ainda melhor ao usuário.[CR]Aeon MQ 8 incorpora um novo recurso chamado WIDGES FLEXÍVEIS SEGUNDA GERAÇÃO que eleva o nível de customização como você nunca viu antes.[CR]Aeon MQ 8, você nunca viu uma skin assim.</description>
-		<disclaimer lang="en_GB">Aeon MQ 8, improved, more light and more powerful than ever.</disclaimer>
-		<disclaimer lang="en_US">Aeon MQ 8, improved, more light and more powerful than ever.</disclaimer>
-		<disclaimer lang="pt_BR">Aeon MQ 8, melhorada, mais leve e mais poderosa do que nunca.</disclaimer>
-	<platform>all</platform>
-	<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-	<forum>https://forum.kodi.tv/</forum>
-	<source>https://drive.google.com/drive/folders/0BxZQqz5XxlaDZXVEcHhVTHdtSk0?usp=sharing</source>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-		<screenshot>resources/screenshot-01.jpg</screenshot>
-		<screenshot>resources/screenshot-02.jpg</screenshot>
-		<screenshot>resources/screenshot-03.jpg</screenshot>
-		<screenshot>resources/screenshot-04.jpg</screenshot>
-		<screenshot>resources/screenshot-05.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="skin.apptv" name="AppTV" provider-name="Wyrm" version="1.6.0">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0" />
-		<import addon="resource.uisounds.apptv" version="1.0.4" />
-		<import addon="script.skin.helper.service" version="1.1.3" />
-		<import addon="script.skin.helper.widgets" version="1.0.22" />
-	</requires>
-	<extension debugging="false" effectslowdown="1" point="xbmc.gui.skin">
-		<res aspect="16:9" default="true" folder="xml" height="1080" width="1920" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de_DE">Ein von Apple TV inspiriertes Skin für Kodi</summary>
-		<summary lang="el_GR">Ένα κέλυφος για το Kodi, εμπνευσμένο από το Apple TV</summary>
-		<summary lang="en_GB">A AppleTV inspired skin for Kodi</summary>
-		<summary lang="fr_FR">Un habillage pour Kodi inspiré de l'AppleTV</summary>
-		<summary lang="fr_CA">Un habillage pour Kodi inspiré d'AppleTV</summary>
-		<summary lang="gl_ES">Un tema para Kodi inspirado no AppleTV</summary>
-		<summary lang="he_IL">מעטפת עבור Kodi בהשראת AppleTV</summary>
-		<summary lang="it_IT">Una skin per Kodi ispirata a AppleTV</summary>
-		<summary lang="ko_KR">애플 TV에 영감을 받은 Kodi용 스킨</summary>
-		<summary lang="lt_LT">AppleTV įkvėpta Kodi teminė išvaizda</summary>
-		<summary lang="ms_MY">Kulit yang diilham dari AppleTV untuk Kodi</summary>
-		<summary lang="nl_NL">Een op AppleTV geïnspireerde skin voor Kodi</summary>
-		<summary lang="pl_PL">Skóra inspirowana interfejsem AppleTV</summary>
-		<summary lang="pt_PT">Um tema para o Kodi inspirado na AppleTV</summary>
-		<summary lang="pt_BR">Uma Skin inspirada na Apple TV</summary>
-		<description lang="de_DE">AppTV ist ein vom Apple TV inspiriertes Skin für Kodi. Es bietet eine sehr ressourcensparende, minimalistische Benutzeroberfläche und gleichzeitig Zugang zu den erweiterten Kodi-Funktionen, die nicht in der originalen Apple TV-Oberfläche vorhanden sind.</description>
-		<description lang="el_GR">Το AppTV είναι ένα κέλυφος για το Kodi, εμπνευσμένο από το AppleTV. Διαθέτει ένα ιδιαίτερα ελαφρύ, μινιμαλιστικό περιβάλλον εργασίας, ενώ παρέχει πρόσβαση σε ένα πλήθος προχωρημένων λειτουργιών του Kodi που δεν είναι διαθέσιμες στο πρωτότυπο περιβάλλον του AppleTV.</description>
-		<description lang="en_GB">AppTV is a AppleTV inspired skin for Kodi. It provides a very light weight minimalist gui while also allowing access to a number of advanced Kodi features not available in the original AppleTV interface.</description>
-		<description lang="fr_FR">AppTV est un habillage pour Kodi inspiré de l'AppleTV. Il fournit une interface minimaliste légère tout en permettant l'accès à bon nombre des caractéristiques avancées de Kodi non disponibles dans l'interface AppleTV d'origine.</description>
-		<description lang="fr_CA">AppTV est un habillage pour Kodi inspiré d'AppleTV. Il propose une IUG très légère et minimaliste tout en permettant l'accès à plusieurs fonctions avancées de Kodi qui ne sont pas proposées dans l'interface originale d'AppleTV.</description>
-		<description lang="it_IT">AppTV è una skin ispirata a AppleTV per Kodi. Fornisce un'interfaccia molto leggera e minimalistica e permette di accedere ad alcune funzioni avanzate di Kodi non disponibili nell'interfaccia originale di AppleTV.</description>
-		<description lang="ko_KR">AppTV는 애플TV에서 영감을 받아 만든 Kodi용 스킨입니다. GUI를 최소화하여 가벼우면서도 애플TV 인터페이스에서는 사용할 수 없는 Kodi의 여러가지 고급 기능을 사용할 수 있습니다.</description>
-		<description lang="lt_LT">AppTV yra AppleTV įkvėpta teminė išvaizda, skirta Kodi. Ji suteikia labai lengvą, minimalistinę grafinę vartotojo sąsają, tuo pačiu suteikiant galimybę naudoti daugelį pažangių Kdi funkcijų, kurių nėra originalioje AppleTV sąsajoje.</description>
-		<description lang="ms_MY">AppTV adalah kulit yang diilham dari AppleTV untuk Kodi. Ia menyediakan gui minimalis yang sangat ringkas juga membolehkan capaian ke beberapa fitur lanjutan Kodi yang tidak tersedia dalam antaramuka AppleTV yang asal.</description>
-		<description lang="nl_NL">AppTV is een op AppleTV geïnspireerde skin voor Kodi. het voorziet in een zeer lichtgewichte minimalistische gui terwijl eveneens toegang is tot een aantal geavanceerde Kodi features die niet beschikbaar zijn in de orginele AppleTV interface.</description>
-		<description lang="pl_PL">ApplTV jest skórą inspirowaną wyglądem interfejsu AppleTV. Dostarcza wyjątkowo lekki i minimalistyczny interfejs użytkownika umożliwiający dostęp do wielu zaawansowanych funkcji Kodi, niedostępnych w oryginalnym interfejsie AppleTV.</description>
-		<description lang="pt_BR">AppTV é uma skin inspirada na AppleTV para Kodi. Fornece uma GUI bem leve e minimalista  ao mesmo empo que permite acesso a inúmeras funções avançadas do Kodinão disponíveis na interface original da AppleTV.</description>
-		<disclaimer lang="de_DE">Poste Funktionswünsche, Fragen und Fehler in [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="el_GR">Για βοήθεια, αιτήματα και αναφορές προβλημάτων, μεταβείτε στο [CR]http://forum.kodi.tv/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="en_GB">Post help and feature/bug requests to [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="es_ES">Postea bugs y preguntas en [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="fr_FR">Publier les demandes d'aide, de fonction, de bogue sur [CR]http://forum.kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="fr_CA">Publier les demandes d'aide, de fonction, de bogue sur [CR]http://forum.kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="gl_ES">Publica peticións de axuda e características/erros en [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="hu_HU">Hiba és fejlesztési javaslatot jelezd az alábbi oldalon:[CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="it_IT">Chiedi aiuto, richiedi funzioni/segnala bug a [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="ko_KR">도움 요청, 기능 제안, 버그 보고[CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="lt_LT">Paprašykite pagalbos ar paskelbkite funkcijos/klaidos užklausą čia: [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="ms_MY">Poskan bantuan dan permintaan fitur/pepijat ke [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="nl_NL">Stuur help en functie/fout vragen naar [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="pl_PL">Prośby o pomoc, zgłoszenia błędów oraz prośby o nowej funkcje zamieść na forum[CR]http://forum.kodi.tv/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="pt_BR">Postar pedidos de ajuda/funcionalidades e bugs em  [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="sv_SE">Posta hjälp-/funktionsförfrågningar samt buggrapporter till
-[CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<disclaimer lang="zh_CN">请在论坛发布求助及功能需求/报告错误 [CR]http://forum.Kodi.org/forumdisplay.php?fid=76</disclaimer>
-		<platform>all</platform>
-		<license>Licensed under the Apache License, Version 2.0</license>
-		<forum>https://forum.kodi.tv/forumdisplay.php?fid=76</forum>
-		<website />
-		<email />
-		<source>https://github.com/wyrm65/skin.apptv</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot001.jpg</screenshot>
-			<screenshot>resources/screenshot002.jpg</screenshot>
-			<screenshot>resources/screenshot003.jpg</screenshot>
-			<screenshot>resources/screenshot004.jpg</screenshot>
-			<screenshot>resources/screenshot005.jpg</screenshot>
-			<screenshot>resources/screenshot006.jpg</screenshot>
-			<screenshot>resources/screenshot007.jpg</screenshot>
-			<screenshot>resources/screenshot008.jpg</screenshot>
-			<screenshot>resources/screenshot009.jpg</screenshot>
-			<screenshot>resources/screenshot010.jpg</screenshot>
-		</assets>
-		<news>1.6.0[CR]  - Game menu support. Updated a number of Music and Video Views.[CR]  - Replace support for NextUp Notification script with Upnext script.[CR]  - Numerous fixes to PVR.[CR]</news>
-	</extension>
-</addon>
-
-<addon id="skin.aura" name="Aura" provider-name="jurialmunkey" version="1.0.2">
-    <requires>
-        <import addon="xbmc.gui" version="5.14.0" />
-        <import addon="script.skinshortcuts" version="0.4.0" />
-        <import addon="script.extendedinfo" version="3.0.0" />
-        <import addon="script.image.resource.select" version="0.0.5" />
-        <import addon="plugin.program.autocompletion" version="1.0.1" />
-        <import addon="resource.images.studios.white" version="0.0.10" />
-        <import addon="resource.images.moviegenreicons.transparent" version="0.0.6" />
-    </requires>
-    <extension debugging="false" defaultthemename="Textures.xbt" effectslowdown="1" point="xbmc.gui.skin">
-        <res aspect="16:9" default="true" folder="1080i" height="1080" width="1920" />
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Minimalistic. Customisable. Multiple Widgets.</summary>
-        <description lang="en_GB">Aura is highly customisable skin with multiple widgets and a horizontal home menu. Aura combines the minimalism and rounded edges of Arctic Zephyr with the sleek customisability of Horizon. Whilst the best Aura experience is had with a remote, Aura has been designed to accomodate mouse and touch users where possible.</description>
-        <platform>all</platform>
-        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=328558</forum>
-        <source>https://github.com/jurialmunkey/skin.aura</source>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-            <screenshot>resources/screenshot-01.jpg</screenshot>
-            <screenshot>resources/screenshot-02.jpg</screenshot>
-            <screenshot>resources/screenshot-03.jpg</screenshot>
-            <screenshot>resources/screenshot-04.jpg</screenshot>
-            <screenshot>resources/screenshot-05.jpg</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="skin.box" name="BOX" provider-name="DjCisco" version="6.4.2">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0" />
-		<import addon="script.favourites" version="6.0.1" />
-		<import addon="service.skin.widgets" version="0.0.29" />
-	</requires>
-	<extension debugging="false" effectslowdown="1.00" point="xbmc.gui.skin">
-		<res aspect="16:9" default="true" folder="720p" height="720" width="1280" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">BOX - Harvesting the power of basics.</summary>
-		<description lang="en_GB">Inspired by LightBox and nbox, BOX is about providing diversity with consistency. The skin principle is using the same layout and building blocks to display your media in different ways. So it always looks the same but in a different way</description>
-		<platform>all</platform>
-		<license>Creative Commons Attribution-Share Alike 3.0 Unported License</license>
-		<forum>http://forum.kodi.tv/forumdisplay.php?fid=217</forum>
-		<source>https://github.com/DjCisco/skin.BOX</source>
-		        <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
-            <screenshot>resources/screenshot01.jpg</screenshot>
-            <screenshot>resources/screenshot02.jpg</screenshot>
-            <screenshot>resources/screenshot03.jpg</screenshot>
-            <screenshot>resources/screenshot04.jpg</screenshot>
-            <screenshot>resources/screenshot05.jpg</screenshot>
-            <screenshot>resources/screenshot06.jpg</screenshot>
-            <screenshot>resources/screenshot07.jpg</screenshot>
-            <screenshot>resources/screenshot08.jpg</screenshot>
-        </assets>
-	</extension>
-</addon>
-
-<addon id="skin.estuary.modv2" version="3.0.5" name="[COLOR orange]Estuary MOD V2 (KODI 18)[/COLOR]" provider-name="Guilouz">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="script.skinshortcuts" version="0.6.5"/>
-		<import addon="script.skin.helper.service" version="1.0.0"/>
-        <import addon="script.skin.helper.widgets" version="1.0.0"/>
-        <import addon="script.image.resource.select" version="1.0.0"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
- 		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.service" library="scripts/viewswitcher.py" visible="!String.IsEmpty(Window(home).Property(CurrentSkin)) + Skin.HasSetting(ForcedViews.Enabled)" />
-	<extension point="kodi.context.item">
-      	<menu id="kodi.core.main">
-      		<item library="scripts/context_menu_jumptoletter.py">
- 				<label>$LOCALIZE[40165]</label>
- 				<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,set) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,artist) | String.IsEqual(ListItem.dbtype,album) | String.IsEqual(ListItem.dbtype,musicvideo) | Container.Content(addons)] + !Window.IsVisible(Home)</visible>
- 			</item>
-      		<item library="scripts/context_menu_moviessets.py">
- 				<label>$LOCALIZE[40181]</label>
- 				<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + String.IsEqual(ListItem.DBType,set) + !Window.IsVisible(Home)</visible>
- 			</item>
-      		<item library="scripts/context_menu_extendedinfo.py">
-        		<label>$LOCALIZE[40182]</label>
-        		<visible>!String.IsEmpty(Window(home).Property(CurrentSkin)) + System.HasAddon(script.extendedinfo) + !System.HasAddon(context.extendedinfo.dialog) + [String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season) | String.IsEqual(ListItem.dbtype,actor) | String.IsEqual(ListItem.dbtype,director)]</visible>
-      		</item>
-    	</menu>
- 	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">Estuary MOD V2 skin by Guilouz</summary>
-		<summary lang="fr_FR">Thème Estuary MOD V2 par Guilouz</summary>
-		<description lang="en_GB">Estuary MOD V2 is a mod from Estuary by Guilouz for Kodi 18. It attempts to be easy for first time Kodi users to understand and use.</description>
-		<description lang="fr_FR">Estuary MOD V2 est un mod de Estuary par Guilouz pour Kodi 18. Il est facile à comprendre et à utiliser pour les utilisateurs novices de Kodi.</description>
-		<disclaimer lang="en_GB">For better experience, be sure to install all addons required by the theme.</disclaimer>
-		<disclaimer lang="fr_FR">Pour une meilleure expérience, assurez-vous d'installer toutes les extensions requises par le thème.</disclaimer>
-		<platform>all</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<source>https://github.com/Guilouz/skin.estuary.modv2</source>
-			<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<screenshot>resources/screenshot-01.jpg</screenshot>
-				<screenshot>resources/screenshot-02.jpg</screenshot>
-				<screenshot>resources/screenshot-03.jpg</screenshot>
-				<screenshot>resources/screenshot-04.jpg</screenshot>
-				<screenshot>resources/screenshot-05.jpg</screenshot>
-				<screenshot>resources/screenshot-06.jpg</screenshot>
-				<screenshot>resources/screenshot-07.jpg</screenshot>
-				<screenshot>resources/screenshot-08.jpg</screenshot>
-				<screenshot>resources/screenshot-09.jpg</screenshot>
-				<screenshot>resources/screenshot-10.jpg</screenshot>
-				<screenshot>resources/screenshot-11.jpg</screenshot>
-			</assets>
-			<news>[B]3.0.5[/B][CR]• Add number of bits per sample on music OSD[CR]• Add Russian translation by salashnik[CR]• Add Czech translation by Pavuucek[CR]• Add Spanish translation by notorius28[CR]• Display seekbar on showtime action[CR]• Improve detection of audio CDs using an infobool[CR]• Fix Holidays themes[CR]• Minor fixes[CR][CR][B]3.0.4[/B][CR]• KODI 18 : Bump target GUI API to 5.14.0[CR]• KODI 18 : Add GUI for Radio Data System (RDS)[CR]• Add support for 'Next Up' addon by im85288[CR]• Add 8K flag icon[CR]• Add Rip audio-cd from 'Disc' on home menu[CR]• Add Hebrew and Armenian typefaces to the fonts[CR]• Video OSD and Music OSD enhancements/fixes[CR]• Minor fixes[CR][CR][B]3.0.3[/B][CR]• KODI 18 : Video OSD - Hide 'Previous' button for non-seekable streams[CR]• KODI 18 : Game - Add controller description[CR]• KODI 18 : Game - Add 'Get all' button to controller dialog[CR]• KODI 18 : Game OSD - Show help dialog on first view[CR]• KODI 18 : Game OSD - Finish renaming 'View mode' to 'Stretch mode'[CR]• KODI 18 : Game OSD - Extend help dialog to explain lack of remote support[CR]• Add 'HDTV', 'VHS' and 'HDDVD' flag icons[CR]• Fix condition for focus on the stop button[CR]• Minor fixes[CR][CR][B]3.0.2[/B][CR]KODI 18 : • Add 'sorty by' and 'sort order' for epg grid channels[CR]• Add 'mp3float' flag icon[CR]• Fix TV Shows ratings in some views[CR]• Minor fixes[CR][CR][B]3.0.1[/B][CR]• Add support for CoreELEC settings addon[CR]• Add DefaultMusicSources icon[CR]• Game : Update available views[CR]• Game OSD : Rename 'View mode' setting label to 'Stretch mode'[CR]• Game OSD : Rename 'Input settings' setting label to 'Controls'[CR]• Fix lists on dialog video info[CR]• Fix some textures[CR]• Fix keyboard navigation[CR]• Minor fixes[CR][CR][B]3.0.0[/B][CR]• KODI 18 : Add 'Advanced settings' button to settings list for Game OSD[CR]• KODI 18 : Add video rotation setting for Game OSD[CR]• Add new video info dialog (Thanks to jurialmunkey and VikkiXavier)[CR]• Add new music info dialog[CR]• Add new extended info dialog[CR]• Add new text viewer window[CR]• Add setting to disable fullscreen video info for movies and TV shows[CR]• Remove music themes feature which caused crashes[CR]• Minor fixes[CR][CR][B]2.9.9[/B][CR]• KODI 18 : Allow user to select resolutions[CR]• Add video fps flag icon on OSD[CR]• Changes in playing trailers on video info (Thanks to jurialmunkey)[CR]• Fix music themes with video addons[CR]• Minor fixes[CR][CR][B]2.9.8[/B][CR]• KODI 18 : Audio DSP removal[CR]• Add support for music themes for movies and TV shows (theme.mp3 files) (Thanks to manfeed)[CR]• Minor fixes[CR][CR][B]2.9.7[/B][CR]• KODI 18 : Add PVR Timeshift Offset[CR]• KODI 18 : Add Epg Event Seek Time[CR]• KODI 18 : Introduced control 402 for epg event seek percentage[CR]• Enable 'Wall (thumbnails)' and 'InfoWall (thumbnails)' views for artists[CR]• Improvements[CR]• Fix forced views (thanks to hawkeyexp)[CR]• Minor fixes[CR][CR][B]2.9.6[/B][CR]• KODI 18 : Use subtitle setting osd instead of custom dialog[CR]• Add possibility to disable default splash screen[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.9.5[/B][CR]• KODI 18 : RetroPlayer: Disable reset hotkey[CR]• Add default splash screen[CR]• Add new Icon and Fanart[CR]• Add icon for font addons[CR]• Add original title on video info[CR]• Remove possibility to edit power menu to avoid some crash[CR]• Improvement[CR][CR][B]2.9.4[/B][CR]• Add scope mode for constant image height (CIH) setup (OSD only)[CR]• Add new fullscreen info for movies and episodes[CR]• Add possibility to show ratings and user ratings in same time[CR]• Add tags on dialog info[CR]• Improve support for GlobalSearch 8.x.x addon[CR]• Improve PVR channels OSD[CR]• Others improvements[CR]• Minor fixes[CR][CR][B]2.9.3[/B][CR]• Add support GlobalSearch 8.x.x addon[CR]• Add support for music artworks with Artwork Beef addon[CR]• Add movies set button on video info dialog[CR]• Add progress bar to PVR widgets[CR]• Add support for 'KN Switchtimer Service' addon on PVR info dialog[CR]• Improve 'Icons Wall' view for PVR channels[CR]• Improve dialog info windows[CR]• Add possibility to show channels groups on PVR Guide[CR]• Many others improvements in PVR[CR]• Fix forced views with a script from hawkeyexp[CR]• Fix PVR NextUp popup[CR]• Minor fixes[CR][CR][B]2.9.2[/B][CR]• Fix for movies sets overview[CR]• Minor fixes (Thanks to Angelinas)[CR][CR][B]2.9.1[/B][CR]• Add new 'Icons Wall' view for PVR channels[CR]• Add Valentine's Day and Easter themes[CR]• Add possibility to change video lyrics colors[CR]• Minor fixes[CR][CR][B]2.9.0[/B][CR]• KODI 18 : Move recording control and info functionality from player to PVR[CR]• KODI 18 : Add button to bring up program selection dialog[CR]• Add support for more aspect ratios (used by newer phones)[CR]• Add Christmas (1 december to 2 january) and Halloween (30-31 october) themes[CR]• Add extended info when playing music[CR]• Minor fixes[CR][CR][B]2.8.9[/B][CR]• Add support for music clearart on music OSD[CR]• Improvements[CR]• Fix font issue[CR]• Minor fixes[CR][CR][B]2.8.8[/B][CR]• Improve PVR info dialog[CR]• Add new 'Christmas' pattern[CR]• Fix libraries fanarts when music is played[CR]• Fix movies sets logos on 'Shift View'[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.8.7[/B][CR]• Remove protection against banned addons aka Caretaker[CR]• Replace 'Artwork Downloader' support by 'Artwork Beef' (several advantages)[CR]• Enable 'Fanart' view for music videos[CR]• Fix PVR Group Manager channellist scrollbar position[CR]• Fix video in background when opacity is set to 100%[CR]• Minor fixes[CR][CR][B]2.8.6[/B][CR]• Add warning popup to just alert people and possible to disable it[CR]• Remove unload skin for protection against banned addons[CR][CR][B]2.8.5[/B][CR]• Fix close warning popup[CR][CR][B]2.8.4[/B][CR]• Add protection against banned addons (Thanks to sualfred)[CR]• Add (rating) star symbols to fontset (Thanks to Jeroen)[CR]• Improvements[CR]• Fix logon/logoff on power menu[CR]• Minor fixes[CR][CR][B]2.8.3[/B][CR]• Remove 'doNotShareMenu' argument[CR][CR][B]2.8.2[/B][CR]• Add games addons widget to games tab[CR]• Add Genres on list and wide list views[CR]• New Favourites window[CR]• Fix Favourites widget[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.8.1[/B][CR]• KODI 18 : Add filter description to video filter dialog[CR]• Minor fixes[CR][CR][B]2.8.0[/B][CR]• KODI 18 : Add Volume setting to Game OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.10[/B][CR]• KODI 18 : RetroPlayer: Add renderer for Windows, OpenGL and OpenGLES[CR]• Add possibility to use small video OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.9[/B][CR]• Add possibility to show visualisation effects behind background[CR]• Improvements[CR]• Fix missing 'Jump to letter' functionality for some views[CR]• Fix pause video during access to extended info with TV Shows[CR]• Fix on PVR Radio[CR]• Minor fixes[CR][CR][B]2.7.8[/B][CR]• Add possibility to disable Clearlogo on OSD[CR]• OSD info improvements[CR]• Fix Video Lyrics[CR]• Minor fixes[CR][CR][B]2.7.7[/B][CR]• Add 'Jump to letter' functionality to context menu[CR]• Video OSD improvements[CR]• Music OSD improvements[CR]• PVR OSD improvements[CR]• Fix for PVR info[CR]• Minor fixes[CR][CR][B]2.7.6[/B][CR]• KODI 18 : Implement FullscreenGame window[CR]• Replace genres widget by new one based on genres content (thanks to sualfred for his idea)[CR]• Add new genres widgets list/panel for Personal widgets[CR]• Add new 'Most played music videos' default widget[CR]• Add possibility to show media names with widgets names[CR]• Add new functionality 'Jump to letter' when scrollbar is focused (thanks to jurialmunkey for his idea)[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.5[/B][CR]• KODI 18 : Add support for epg tag playback[CR]• KODI 18 : New OSD dialog for video games settings[CR]• Add possibility to automatically show music video info at beginning and end of playing (Thanks to jurialmunkey)[CR]• Add possibility to replace background when fanarts are disabled[CR]• Improve PVR OSD info[CR]• Improve video OSD info[CR]• Improve 'TV Show - Next Aired' addon[CR]• Enable more views for video addons[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.4[/B][CR]• Add possibility to choose when video info must be shown on video OSD[CR]• Add support for Artworks on OSD video info for addons[CR]• Add 'Recommended Youtube videos' button on OSD for Youtube addon (Thanks to jurialmunkey)[CR]• Add support for video countries icons pack[CR]• Add 'Get all Artworks' button to context menu[CR]• Improve music visualisation[CR]• Minor fix[CR][CR][B]2.7.3[/B][CR]• Video info are now displayed when video is paused with possibility to disable it[CR]• Improve OSD info[CR]• Add fallback icons for mediaflags[CR]• Add animated poster on video info dialog[CR]• Minor changes and improvements[CR]• Fix issue with scripts for others skins[CR]• Minor fixes[CR][CR][B]2.7.2[/B][CR]• Add Top 250 from IMDb on dialog video info[CR]• Add button to download all Artworks on dialog video info[CR]• Add toggle button on PVR Guide to enable standard colors for genres[CR]• Add setting to pause video during access to extended info[CR]• Add possibility to configure media flags[CR]• Change appearance of 'TV Show - Next Aired' addon[CR]• Fix fanarts when 'Show video on background' is disable[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.7.1[/B][CR]• Add possibility to change media flags color[CR]• Add possibility to show a border for media and choose his color[CR]• Improve dialog video info[CR]• Fix movies sets info with 'Banner' view[CR]• Fix media flags for sets with 'Banner' view[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.7.0[/B][CR]• Add number of oscars on video info (thanks to jurialmunkey)[CR]• Add possibility to hide fanart opacity in fullscreen mode on music visualisation[CR]• Improve navigation with better animations[CR]• Improve some views[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.6.2[/B][CR]• Add support for Skin Helper Service PVR Artworks[CR]• Enable 'Fanart' view for episodes[CR]• Enable 'Banner' view for movies[CR]• Improve 'Banner' view [CR]• Update thumbs previews for views[CR]• Fix duplicate ratings in list views[CR]• Improvements[CR]• Minor fixes[CR[CR][B]2.6.1[/B][CR]• Changes for Kodi 18[CR]• Add possibility to hide OSD when video is paused[CR]• Add 4K HDR flag icon (filename must contain 'HDR')[CR]• Add shortcut in skin settings to configure personal API key[CR]• Add scrolling text on music visualisation (thanks to jurialmunkey)[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.6.0[/B][CR]• Add possibility to choose gradient colors (thanks to jurialmunkey for idea)[CR]• Add classic list for power menu[CR]• Add Game OSD[CR]• Improvements[CR]• Minor fixes[CR][CR][B]2.5.10[/B][CR]• Add support for movies genres icons for Personalized Widgets[CR]• Add missing H262 flag icon[CR]• Improvements[CR]• Fix for PVR in some conditions[CR]• Minor fixes[CR][CR][B]2.5.9[/B][CR]• Add possibility to play trailers on movie information screen[CR]• Reorder necessary addons in Skin Settings[CR]• Minor fixes[CR][CR][B]2.5.8[/B][CR]• Add possibility to show item label on top with minimize main menu setting[CR]• Show mute icon on libraries when mute is enable[CR]• Fix clearlogos disappearance when mute is enable[CR]• Fix for LibreELEC settings addon[CR]• Minor fixes[CR][CR][B]2.5.7[/B][CR]• Add possibility to minimize main menu[CR]• Add media flags icons for 'Triple lists' and 'Double lists' views[CR]• Remove always attrib for defaultcontrol on Settings[CR]• Changes on login screen[CR]• Minor fixes[CR][CR][B]2.5.6[/B][CR]• Add new 'Triple lists' view for TV shows[CR]• Add new 'Double lists' view for seasons[CR]• Changes for Kodi 18 : Migrate add-on settings to settings library[CR]• Minor fixes[CR][CR][B]2.5.5[/B][CR]• Add possibility to show clearlogos at the top of home menu[CR]• Add clearlogos on dialog music info[CR]• Add banners on dialog video info[CR]• Fix episodes thumbs with Personalized Widgets[CR]• Fix on 'Double lists' and 'Triple lists' views to launch full album[CR]• Minor fixes[CR][CR][B]2.5.4[/B][CR]• Add posters on 'Fanart' view[CR]• Add new 'Double lists' view for sets[CR]• Fix end time resume flag icon with AM/PM[CR]• Fix visibility for 'Double lists' and 'Triple lists' views[CR]• Minor fixes[CR][CR][B]2.5.3[/B][CR]• Add new 'Double lists' view for artists and albums[CR]• Add new 'Triple lists' view for artists[CR]• Improve esthetic appearance[CR]• Minor fixes[CR][CR][B]2.5.2[/B][CR]• Add miniatures panel for Personalized Widgets[CR]• Add support for animated weather icons[CR]• Fix missing watched icons and progress bars for Personalized Widgets[CR]• Minor fixes[CR][CR][B]2.5.1[/B][CR]• Fix aspect ratio for widgets[CR]• Minor fixes[CR]• Update German translation[CR][CR][B]2.5.0[/B][CR]/!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\[CR]• Add vertical panels for Personalized Widgets[CR]• Add 'Categories' appearance for Personalized Widgets[CR]• Add support for albums back thumbs (file must be placed in album folder and named 'thumbback.jpg')[CR]• Add possibility to change rating text color[CR]• Fix issue with Appearance for Personalized Widgets[CR]• Minor fixes[CR][CR][B]2.4.0[/B][CR][B]/!\ Reboot Kodi and 'Reset main menu and power menu settings' in skin settings after installation of this version /!\[/B][CR]• Add support for Skin Shortcuts template to avoid personalized widgets reloading[CR]• Add possibility to define sort method and sort direction for personalized widgets[CR]• Add rating on video osd info[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.3.2[/B][CR]• Add VP9 video codec icon[CR]• Add rewind and forward OSD buttons for PVR TimeShift[CR]• Fix on PVR/Radio widgets[CR]• Fix duration flag icon with Global Search[CR]• Many fixes for Arial font[CR]• Minor changes[CR]• Minor fixes[CR][CR][B]2.3.1[/B][CR]• Add Next Up popup for Live TV[CR]• Add albums count on artists dialog info[CR]• Add possibility to disable 'Settings' shortcut widget[CR]• Add PVR overlay when switching channels[CR]• Fix artists/albums plots on music dialog info[CR]• Fix on PVR[CR]• Fix caterories labels for personalized widgets[CR][CR][B]2.3.0[/B][CR]• Add parental control to protect home menu items and widgets with password[CR]• Add support for German language (Thanks to rainman74)[CR]• Fix CDArts position on Global Search screen[CR]• Fix esthetic appearance[CR]• Minor fixes[CR]• Minor changes[CR][CR][B]2.2.9[/B][CR]• Add support for extendedinfo youtube list[CR]• Add shortcut for movies set info to context menu[CR]• Add shortcut for extended info to context menu[CR]• Fix lyrics on music visualisation[CR]• Fix aspect ratio on tv shows widgets[CR]• Fix channel osd recording indicator visibility[CR]• Fix esthetic appearance[CR]• Minor fixes[CR]• Minor changes[CR][CR][B]2.2.8[/B][CR]• Add info dialog for movies sets[CR]• Fix playlists editor[CR]• Minor fixes[CR][CR][B]2.2.7[/B][CR]• Changes for Kodi 18[CR]• Add possibility to disable colored outline for CDArts[CR]• Add possibility to disable animated lyrics for classic lyrics[CR]• Fix disc overlay for some CDArts[CR]• Fix extended info window for some resolutions[CR]• Fix playlists editor[CR]• Minor fixes[CR][CR][B]2.2.6[/B][CR]• Change extension file '.png' to '.jpg' for games artworks[CR]• Minor fixes[CR][CR][B]2.2.5[/B][CR]• Add games sources widget[CR]• Add support for games artworks (artworks must be named identical to the file name of the game with the extension '.png' and must be in the same folder as games)[CR]• Fix personalized widget 5[CR]• Fix plots and thumbs on info dialog to avoid spoilers[CR]• Fix widgets property[CR]• Changes on widgets when libraries are not populated[CR][CR][B]2.2.4[/B][CR]• Add possibility to show CDArt on widgets and on library[CR]• Add possibility to install addons zip files directly from home submenu[CR]• Minor fixes[CR][CR][B]2.2.3[/B][CR]• Add possibility to use alphabet for scrolling on library (experimental)[CR]• Add more personalized widgets to bypass problem with disappearance and animations of widgets (use one personalized widget per home menu item)[CR]• Changes on duration flag icon with hours and minutes[CR]• Changes on PVR Guide with Kodi 18 last build[CR]• Minor fixes[CR][CR][B]2.2.2[/B][CR]• Add possibility to greyed out watched items in library and on widgets[CR]• Add support for Videolyrics v3 with possibility to fix lyrics colors by song (thanks to manfeed)[CR]• Add support for Kodi Log Uploader addon[CR]• Fix LibreELEC settings buttons[CR]• Minor fixes[CR][CR][B]2.2.1[/B][CR]• Changes for Kodi 18[CR]• Add 'All channels' and 'All radios' widgets[CR]• Fix PVR channels OSD[CR]• Fix esthetic appearance[CR][CR][B]2.2.0[/B][CR]• Add possibility to force views in library[CR]• Add possibility to customize power menu[CR]• Add flags for moviesets widget[CR]• Fix missing view for music[CR]• Fix esthetic appearance[CR]• Fix context menu position[CR]• Minor fixes[CR][CR][B]2.1.9[/B][CR]• Changes for Kodi 18[CR]• Add preview for view mode[CR]• Minor fixes[CR][B]2.1.8[/B][CR]• Add new 'Mosaic (vertical)' view[CR][CR][B]2.1.7[/B][CR]• Changes for Kodi 18[CR]• Fix setting to disable submenu[CR]• Minor fixes[CR][CR][B]2.1.6[/B][CR]• Add new 'Gallery' view[CR]• Add new 'Mosaic' view[CR]• Add clearlogos list for 'Shift' view[CR]• Minor fixes[CR][CR][B]2.1.5[/B][CR]• Add library info on settings widget[CR]• Add ratings/user ratings in list views[CR]• Changes on 'Next episode to watch' widget[CR]• Minor fixes[CR][CR][B]2.1.4[/B][CR]• Add possibility to configure submenus for Personnal Widget[CR]• Add possibility to show banners for episodes/thumbs widgets[CR]• Decrease number of personal widgets to 8 because not possible to show more[CR]• Fix context menu for CU LRC Lyrics addon[CR]• Fix disable Clearlogos on library[CR]• Minor fixes[CR][CR][B]2.1.3[/B][CR]• Fix centered posters on some views[CR]• Fix missing posters flag for moviesets with Wall (Thumbnails) view[CR]• Minnor fixes[CR][CR][B]2.1.2[/B][CR]• Fix adding item with Skin Shortcut[CR][CR][B]2.1.1[/B][CR]• Add support for submenus with Skin Shortcuts addon[CR]• Minnor fixes[CR][CR][B]2.1.0[/B][CR]• Add support for Skin Shortcuts addon to customize home menu and widgets[CR]• Add support for thumbnails with NextUp Service addon[CR]• Add support for Videolyrics v2 (thanks to manfeed)[CR]• Minnor fixes[CR]• Special Thanks to Gracus and ferent for reporting issue[CR][CR][B]2.0.6[/B][CR]• Add two views for power menu[CR]• Add possibility to hide thumbs episodes to avoid spoilers[CR]• Fix banner on music visualisation when next tracks are not available[CR]• Fix missing clearlogos with moviesets widget[CR]• Fix in musicvideo views[CR]• Fix label with moviesets thumbnails[CR]• Enable landscape views for seasons[CR]• Drop support for using hyphen as none value[CR]• Minnor fixes[CR][CR][B]2.0.5[/B][CR]• Add info button on video OSD[CR]• Add language and subtitles language on fullscreen info[CR]• Add button to switch between all/watched/unwatched recordings[CR]• Replace rating badge[CR]• Fix Youtube call[CR]• Minnor fixes[CR][CR][B]2.0.4[/B][CR]• Add new 'InfoWall (thumbnails)' view[CR]• Add new 'Wall (thumbnails)' view[CR]• Add extrafanarts support for 'Fanart' view[CR]• Add icon when item is resumable[CR]• Hide OSD directly after pause[CR]• Fix esthetic appearance[CR]• Minnor fixes[CR][CR][B]2.0.3[/B][CR]• Add Videolyrics (credits to manfeed)[CR]• Add new 'Next episodes to see' widget[CR]• Replace music videos widgets[CR]• Fix color with lyrics[CR]• Fix banner on music fullscreen[CR]• Fix music visualisation[CR]• Fix esthetic appearance[CR][CR][B]2.0.2[/B][CR]• Fix selecting widgets[CR][CR][B]2.0.1[/B][CR]• Add possibility to reorder main menu items[CR]• Add possibility to reset main menu items back to default[CR]• Add possibility to show smaller icons for 'Categories' widgets[CR]• Add studios flag icons for movies widgets[CR]• Add shortcuts on power menu to update video/music library[CR]• Fix colordiffuse for studios and labels flag icons[CR]• Minnor fixes[CR][CR][B]2.0.0[/B][CR]• Initial release[CR]• Add possibility to hide main menu when selecting widgets[CR]• Add possibility to disable each widget[CR]• Add possibility to hide watched items from recently added widgets[CR]• Add possibility to hide episodes plots to avoid spoilers[CR]• Add possibility to change skin color[CR]• Add possibility to change background color[CR]• Add possibility to change pattern color[CR]• Add possibility to change background opacity[CR]• Add possibility to top and bottom bars opacity[CR]• Add possibility to change weather icons pack[CR]• Add possibility to change studios icons pack[CR]• Add possibility to change genres icons pack[CR]• Add possibility to set splash screen (photo, video or music)[CR]• Add possibility to set number of items to display on widgets[CR]• Add possibility to backup/restore skin settings[CR]• Add possibility to disable zoom effect[CR]• Add possibility to enable/disable music visualisation effects on background[CR]• Add possibility to enable/disable video on background[CR]• Add possibility to hide notification popup during playback[CR]• Add possibility to show music visualisation screen when playing song[CR]• Add possibility to ExtraFanarts on music visualisation screen[CR]• Add possibility to animate Fanart/ExtraFanarts on music visualisation screen[CR]• Add possibility to add music visualisation effects on music visualisation screen[CR]• Add possibility to disable Kodi screensaver on music visualisation screen[CR]• Add possibility to start Artwork Downloader at startup[CR]• Add next tracks on music visualisation screen[CR]• Add actors list on video OSD[CR]• Add more buttons on OSD[CR]• Add more flag icons[CR]• Add next airing episodes widget for tv shows[CR]• Add horizontal view for PVR Guide[CR]• Add support for records labels icons pack[CR]• Add support for ExtraFanarts[CR]• Add support for animated posters[CR]• Add support for Clearlogos[CR]• Add support for CDArts[CR]• Add support for Artwork Downloader addon[CR]• Add support for NextUp Notification addon[CR]• Add support for CU LRC Lyrics addon[CR]• Add support for RSS Editor addon[CR]• Add support for Global Search addon[CR]• Add support for TV Show Next Aired addon[CR]• Add support for Extended Info addon[CR]• Add support for LibreELEC settings addon[CR]• Add support for Kiosk mode[CR]• Changes on views[CR]• Changes on volume bar[CR]• Some fixes[CR][CR]</news>
-	</extension>
-</addon>
-
-<addon id="skin.quartz" version="5.4.10" name="Quartz" provider-name="nonjon">
-  <requires>
-    <import addon="xbmc.gui" version="5.14.0"/>
-    <import addon="script.favourites" version="4.0.4"/>
-  </requires>
-
-  <extension
-    point="xbmc.gui.skin" debugging="false">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-	<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-	<summary lang="en_AU">A no-nonsense UI designed to showcase your fanart.</summary>
-	<summary lang="en_GB">A no-nonsense UI designed to showcase your fanart.</summary>
-	<summary lang="en_NZ">A no-nonsense UI designed to showcase your fanart.</summary>
-    <summary lang="en_US">A no-nonsense UI designed to showcase your fanart.</summary>
-	<description lang="en_AU">Quartz is a light-weight skin with a intuitive user interface and highly customizable home screen.</description>
-	<description lang="en_GB">Quartz is a light-weight skin with a intuitive user interface and highly customizable home screen.</description>
-	<description lang="en_NZ">Quartz is a light-weight skin with a intuitive user interface and highly customizable home screen.</description>
-    <description lang="en_US">Quartz is a light-weight skin with a intuitive user interface and highly customizable home screen.</description>
-    <disclaimer lang="en_AU">Original skin design by: pecinko</disclaimer>
-	<disclaimer lang="en_GB">Original skin design by: pecinko</disclaimer>
-	<disclaimer lang="en_NZ">Original skin design by: pecinko</disclaimer>
-	<disclaimer lang="en_US">Original skin design by: pecinko</disclaimer>
-	<forum>https://forum.kodi.tv/showthread.php?tid=331334</forum>
-	<source>https://github.com/nonJon/skin.quartz</source>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-		<screenshot>resources/screenshot-01.jpg</screenshot>
-		<screenshot>resources/screenshot-02.jpg</screenshot>
-		<screenshot>resources/screenshot-03.jpg</screenshot>
-		<screenshot>resources/screenshot-04.jpg</screenshot>
-		<screenshot>resources/screenshot-05.jpg</screenshot>
-		<screenshot>resources/screenshot-06.jpg</screenshot>
-		<screenshot>resources/screenshot-07.jpg</screenshot>
-		<screenshot>resources/screenshot-08.jpg</screenshot>
-	</assets>
+    <license>The MIT License</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=129499</forum>
+    <source>https://github.com/robweber/xbmcbackup</source>
   </extension>
-</addon>
-
-<addon
-	id="skin.unity"
-	version="0.7.1"
-	name="Unity"
-	provider-name="Eddage, Bumpaneer">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="script.skinshortcuts" version="1.0.8"/>
-	</requires>
-	<extension
-		point="xbmc.gui.skin"
-		debugging="false"
-		effectslowdown="1.0">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_AU">A material skin for Kodi by Eddage</summary>
-		<summary lang="en_GB">A material skin for Kodi by Eddage</summary>
-		<summary lang="en_NZ">A material skin for Kodi by Eddage</summary>
-		<summary lang="en_US">A material skin for Kodi by Eddage</summary>
-		<description lang="en_AU">Unity is an adaptation of Confluence based on a material design.</description>
-		<description lang="en_GB">Unity is an adaptation of Confluence based on a material design.</description>
-		<description lang="en_NZ">Unity is an adaptation of Confluence based on a material design.</description>
-		<description lang="en_US">Unity is an adaptation of Confluence based on a material design.</description>
-		<disclaimer lang="en_AU">More info on the skin can be found at the Kodi Forums.</disclaimer>
-		<disclaimer lang="en_GB">More info on the skin can be found at the Kodi Forums.</disclaimer>
-		<disclaimer lang="en_NZ">More info on the skin can be found at the Kodi Forums.</disclaimer>
-		<disclaimer lang="en_US">More info on the skin can be found at the Kodi Forums.</disclaimer>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-		<forum>https://forum.kodi.tv/forumdisplay.php?fid=244</forum>
-		<source>https://github.com/bumpaneer/skin.unity/tree/Krypton</source>
-		<platform>all</platform>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot01.jpg</screenshot>
-			<screenshot>resources/screenshot02.jpg</screenshot>
-			<screenshot>resources/screenshot03.jpg</screenshot>
-			<screenshot>resources/screenshot04.jpg</screenshot>
-			<screenshot>resources/screenshot05.jpg</screenshot>
-			<screenshot>resources/screenshot06.jpg</screenshot>
-			<screenshot>resources/screenshot07.jpg</screenshot>
-			<screenshot>resources/screenshot08.jpg</screenshot>
-			<screenshot>resources/screenshot09.jpg</screenshot>
-			<screenshot>resources/screenshot10.jpg</screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="weather.yahoo" name="Yahoo! Weather" version="5.0.6" provider-name="ronie">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.requests" version="2.19.1"/>
-	</requires>
-	<extension point="xbmc.python.weather" library="default.py"/>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="af_ZA">Weervoorspelling van yahoo.com</summary>
-		<summary lang="am_ET">የ አየር ንብረት ከ ያሁ.ኮም</summary>
-		<summary lang="ar_SA">تنبؤات الطقس من موقع yahoo.com</summary>
-		<summary lang="bg_BG">Синоптична прогноза от www.yahoo.com</summary>
-		<summary lang="ca_ES">Previsió del temps des de yahoo.com</summary>
-		<summary lang="cs_CZ">Předpověď počasí z yahoo.com</summary>
-		<summary lang="da_DK">Vejrudsigt fra yahoo.com</summary>
-		<summary lang="de_DE">Wettervorhersage von yahoo.com</summary>
-		<summary lang="el_GR">Πρόγνωση καιρού από το yahoo.com</summary>
-		<summary lang="en_GB">Weather forecast from yahoo.com</summary>
-		<summary lang="en_NZ">Weather forecast from yahoo.com</summary>
-		<summary lang="en_US">Weather forecast from yahoo.com</summary>
-		<summary lang="es_ES">Predicción meteorológica de yahoo.com</summary>
-		<summary lang="et_EE">yahoo.com ilmaennustus</summary>
-		<summary lang="fi_FI">Yahoo.com sääennuste</summary>
-		<summary lang="fr_FR">Prévisions météo depuis yahoo.com</summary>
-		<summary lang="fr_CA">Prévisions météorologiques de yahoo.com</summary>
-		<summary lang="gl_ES">Predición meteorolóxica de yahoo.com</summary>
-		<summary lang="he_IL">תחזית מזג אוויר מ-yahoo.com</summary>
-		<summary lang="hr_HR">Prognoza vremena sa yahoo.com</summary>
-		<summary lang="hu_HU">Időjárás előrejelzés a yahoo.com oldalról</summary>
-		<summary lang="id_ID">Ramalan Cuaca dari yahoo.com</summary>
-		<summary lang="is_IS">Veðurspá frá yahoo.com</summary>
-		<summary lang="it_IT">Servizio meteo di yahoo.com</summary>
-		<summary lang="ja_JP">yahoo.com 天気予報</summary>
-		<summary lang="ko_KR">yahoo.com 일기예보</summary>
-		<summary lang="lt_LT">Orų prognozė iš yahoo.com</summary>
-		<summary lang="lv_LV">Laikapstākļu prognoze no yahoo.com</summary>
-		<summary lang="nl_NL">Weerbericht van yahoo.com</summary>
-		<summary lang="nb_NO">Værvarsel fra yahoo.com</summary>
-		<summary lang="pl_PL">Prognoza pogody z serwisu yahoo.com</summary>
-		<summary lang="pt_PT">Previsão do tempo a partir de yahoo.com</summary>
-		<summary lang="pt_BR">Previsão Climática de yahoo.com</summary>
-		<summary lang="ro_RO">Prognoze meteo de la yahoo.com</summary>
-		<summary lang="ru_RU">Прогноз погоды от yahoo.com</summary>
-		<summary lang="sk_SK">Predpoveď počasia z yahoo.com</summary>
-		<summary lang="sl_SI">Vremenska napoved iz yahoo.com</summary>
-		<summary lang="sr_RS">Прогноза времена са yahoo.com</summary>
-		<summary lang="sv_SE">Väderprognos från yahoo.com</summary>
-		<summary lang="tr_TR">Hava durumu - yahoo.com</summary>
-		<summary lang="uk_UA">Прогноз погоди з </summary>
-		<summary lang="zh_CN">来源于 yahoo.com 的天气预报</summary>
-		<description lang="af_ZA">Weervoorspelling verskaf deur Yahoo! Weer (http://weather.yahoo.com/)</description>
-		<description lang="ar_SA">خدمه تنبؤات الطقس تأتيكم برعايه ياهوو الطقس (http://weather.yahoo.com/)</description>
-		<description lang="bg_BG">Синоптична прогноза, предоставена от Yahoo! Weather (http://www.yahoo.com/)</description>
-		<description lang="ca_ES">Previsió del temps proporcionada per Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="cs_CZ">Předpověď počasí poskytnuta stránkou Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="da_DK">Vejrudsigten leveret af Yahoo! vejr (http://weather.com/)</description>
-		<description lang="de_DE">Wettervorhersage bereitgestellt durch Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="el_GR">Η πρόγνωση καιρού παρέχεται από το Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="en_GB">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="en_NZ">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="en_US">Weather forecast provided by Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="es_ES">Predicción meteorológica facilitada por Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="et_EE">Ilmaennustuse toob teieni Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="fi_FI">Sääennusteen tarjoaa Yahoo! Weather (http://weather.yahoo.com)</description>
-		<description lang="fr_FR">Prévisions météo fournies par Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="fr_CA">Prévisions météorologiques fournies par Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="gl_ES">Predición meteorolóxica fornecida por Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="he_IL">תחזית מזג אוויר מסופקת ע"י Yahoo! Weather (בכתובת http://weather.yahoo.com)</description>
-		<description lang="hr_HR">Prognoza vremena koju pruža Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="hu_HU">Az időjárás előrejelzést biztosítja a Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="is_IS">Veðurspá frá Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="it_IT">Servizio meteo fornito da Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="ja_JP">Yahoo! Weather (http://weather.yahoo.com/) 提供の天気予報</description>
-		<description lang="ko_KR">Yahoo! Weather (http://weather.yahoo.com/) 에서 제공하는 일기예보</description>
-		<description lang="lt_LT">Yahoo! Weather pateikta orų prognozė (http://weather.yahoo.com/)</description>
-		<description lang="lv_LV">Laikapstākļu prognoze pēc Yahoo! laika ar nosacījumu (http://weather.yahoo.com/)</description>
-		<description lang="nl_NL">Weersverwachting geleverd door Yahoo! (http://weather/yahoo.com)</description>
-		<description lang="nb_NO">Værvarsel levert av Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="pl_PL">Prognoza pogody jest dostarczona dzięki uprzejmości serwisu Yahoo! (http://weather.yahoo.com/)</description>
-		<description lang="pt_PT">Previsão metereológica fornecida por Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="pt_BR">Previsão climática fornecida por Yahoo! Weather (http://weather.yahoo.com)</description>
-		<description lang="ro_RO">Prognoză meteo oferită de Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="ru_RU">Прогноз погоды предоставлен Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="sk_SK">Predpoveď počasia poskytovaná službou Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="sl_SI">Vremenska napoved od Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="sr_RS">Прогноза времена коју је омогућио Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="sv_SE">Väderprognos tillhandahållen av Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="tr_TR">Yahoo! Weather tarafından sağlana hava durumu tahmini (http://weather.yahoo.com/)</description>
-		<description lang="uk_UA">Прогноз погоди надано Yahoo! Weather (http://weather.yahoo.com/)</description>
-		<description lang="zh_CN">由雅虎天气提供的天气预报（http://weather.yahoo.com/）</description>
-		<disclaimer lang="af_ZA">Die gebruik van hierdie byvoeging beteken dat jy ooreengekom met die diensvoorwaardes wat op geleë is http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="ar_SA">إستخدامك لهذه اﻹضافه يعنى موافقتك على شروط الخدمه التى يمكن اﻹطلاع عليها من خلال http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="bg_BG">Употребявайки добавката Вие се съгласявате с условията за ползване на услугата, които се намират на http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="ca_ES">L'ús d'aquest complement implica que vostè ha acceptat els termes de servei ubicats a http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="cs_CZ">Používáním tohoto rozšíření schvalujete podmínky užívání umístěné na http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="da_DK">Brug af denne add-on betyder at du har accepteret betingelserne for brug som du finder på http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="de_DE">Die Benutzung der Erweiterung impliziert, das sie den Nutzungsbedingungen unter http://developer.yahoo.com/weather/#terms zugestimmt haben</disclaimer>
-		<disclaimer lang="el_GR">Χρήση αυτού του πρόσθετου συνεπάγεται την αποδοχή των Όρων Χρήσης της Υπηρεσίας (Terms of Service) οι οποίοι βρίσκονται στο http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="en_GB">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="en_NZ">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="en_US">Use of this add-on implies that you have agreed to the Terms of Service located at http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="es_ES">El uso de este add-on implica la aceptación de los Términos de Servicio recogidos en http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="et_EE">Selle lisa kasutamine tähendab nõustumist Kasutustingimustega aadressilt http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="fi_FI">Tämän lisäosan käyttäminen tarkoittaa että hyväksyt käyttäehdot, jotka ovat osoitteessa http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="fr_FR">Par l'utilisation de ce module, vous attestez accepter les Conditions Générales d'Utilisation disponibles sur http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="fr_CA">L'utilisation de cet addiciel implique que vous avez accepté les conditions générales d'utilisation situées à http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="gl_ES">Empregar este complemento implica que vostede acepta os termos do servizo localizados en http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="he_IL">מהשימוש בהרחבה זו משתמע כי הסכמת לתנאי השירות המפורטים ב-http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="hr_HR">Korištenje ovog dodatka podrazumijeva da se slažete sa Pravilima korištenja koji se nalaze na: http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="hu_HU">Ennek a kiegészínőnek a használatával elfogadja a Felhasználói Feltételeket amik megtalálhatóak a http://developer.yahoo.com/weather/#terms oldalon</disclaimer>
-		<disclaimer lang="is_IS">Notkun á þessarri viðbót gefur til kynna að þú hafir samþykkt skilmálana sem finna má á http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="it_IT">L'uso di questo Add-on implica l'accettazione delle Condizioni di Servizio che trovi su http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="ja_JP">このアドオンを使うことにより、http://developer.yahoo.com/weather/#terms にある利用規約に同意したとみなされます。</disclaimer>
-		<disclaimer lang="ko_KR">이 애드온을 사용하는 것은 http://developer.yahoo.com/weather/#terms 에 있는 서비스 이용 약관에 동의함을 의미합니다.</disclaimer>
-		<disclaimer lang="lt_LT">Naudodami šį priedą, jūs sutinkate su paslaugos sąlygomis, esančiomis http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="lv_LV">Lietojot šo spraudni nozīmē, ka jūs esat piekrituši pakalpojumu sniegšanas noteikumiem, kas atrodas http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="nl_NL">Het gebruik van deze add-on impliceert dat je akkoord gaat met de service-voorwaarden op http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="nb_NO">Bruken av dette tillegget betinger at du har godkjent brukervilkårene på http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="pl_PL">Korzystanie z tego dodatku jest równoznaczne z akceptacją regulaminu dostępnego pod adresem: http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="pt_PT">O uso deste add-on implica o seu acordo com os Termos de Serviço disponíveis em http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="pt_BR">O uso deste complemento implica em aceitar os Termos de Serviço localizado em http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="ru_RU">Используя это дополнение, вы соглашаетесь с условиями предоставления услуг, &#10;доступными по адресу: http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="sk_SK">Používaním tohto doplnku súhlasíte s podmienkami používania služby umiestnenými na http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="sl_SI">Uporaba tega dodatka pomeni, da ste se strinjali s pogoji storitve, ki se nahajajo na http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="sr_RS">Употреба овог додатка подразумева да сте сагласни са Условима Коришћења који се налазе на http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="sv_SE">Användning av detta tillägg innebär att du har accepterat användarvillkoren som hittas på http://developer.yahoo.com/weather/#terms</disclaimer>
-		<disclaimer lang="tr_TR">Bu eklentinin kullanımı aynı zamanda http://developer.yahoo.com/weather/#terms adresindeki Kullanım Koşullarını da kabul ettiğiniz anlamına gelir.</disclaimer>
-		<disclaimer lang="uk_UA">Скориставшись цією надбудовою, ви тим самим погоджуєтеся з умовами використання: </disclaimer>
-		<disclaimer lang="zh_CN">使用此插件表示你已同意此服务条款：http://developer.yahoo.com/weather/#terms</disclaimer>
-		<language></language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
-		<forum>https://forum.kodi.tv/showthread.php?tid=169410</forum>
-		<source>https://gitlab.com/ronie/weather.yahoo</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-		</assets>
-	</extension>
 </addon>
 </addons>

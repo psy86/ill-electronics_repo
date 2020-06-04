@@ -1,4 +1,4 @@
-v1.0
-First Release
-
-1.4 Addon und Design Update
+v1.0.2
+- Modified and Update by SGK
+v1.0.1
+- First Release by SGK
